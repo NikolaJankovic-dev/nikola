@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap");
+
+.phase1 {
+  position: absolute;
+  height: 90vh;
+  width: 400px;
+  top: 10vh;
+  left: 10vw;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+  overflow: hidden;
+//   padding-right: 300px;
+  h1 {
+    // margin: auto 0px;
+    width: 200px;
+    padding-right: 200px;
+    font-size: 4.5em;
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: 400;
+    // height: 100%;
+    h1 {
+        // margin: auto 0px;
+        width: 200px;
+        padding-right: 200px;
+        font-size: 4.5em;
+        font-family: "Cinzel Decorative", cursive;
+        font-weight: 400;
+        // height: 100%;
+      }
+  }
+}
+.phase1cont {
+    position: absolute;
+    right: 200%;
+    transition: all ease 2s;
+}
+.phase1contactive {
+    position: absolute;
+    right: 0%;
+    transition: all ease 2s;
+
+}

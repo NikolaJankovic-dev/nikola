@@ -1,0 +1,12 @@
+.phase3 {
+  position: absolute;
+  height: 90vh;
+  top: 210vh;
+  left: 10vw;
+  background-color: cyan;
+}
+
+.phase3 p {
+  margin: 0vh;
+}
+/*# sourceMappingURL=Phase3.module.css.map */

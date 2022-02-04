@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap");
+
+.phase2, .phase5 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  left: 0vw;
+  color: aliceblue;
+//   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+  overflow: hidden;
+  z-index: 1000;
+
+  h1 {
+ 
+    font-size: 4.5em;
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: 400;
+    // height: 100%;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    // line-height: 1em;
+    
+  }
+}
+.phase2 {
+    top: 100vh;
+}
+.phase5 {
+    top: 0vh;
+}
+.phase2cont {
+    position: absolute;
+    top: 0vh;
+    padding-top: 40vh;
+    padding-left: 10vw;
+
+    // right: 200%;
+    // transition: all ease 2s;
+    // transition-delay: 2s;
+}
+.phase2contactive {
+    position: absolute;
+    padding-top: 40vh;
+    padding-left: 10vw;
+
+    // right: 0%;
+    // transition: all ease 2s;
+    // animation: active 2s ease-in-out ;
+}
+@keyframes active{
+    from {left: -100%}
+    to {left: 0}
+}
+.imageDiv {
+  position: absolute;
+  top: 12vh;
+  right: 8vw;
+  width: 53vw;
+  height: 76vh;
+  background-image: url('https://i.imgur.com/GRrLIb7.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all ease 1s;
+}
+.imageDivPage {
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  width: 61vw;
+  height: 100vh;
+  background-image: url('https://i.imgur.com/GRrLIb7.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all ease 1s;
+  z-index: 1000;
+
+}
+p {
+  color: aliceblue;
+}

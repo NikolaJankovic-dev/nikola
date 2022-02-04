@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;EACZ,GAAG,EAAE,KAAK;EACV,IAAI,EAAE,IAAI;EACV,gBAAgB,EAAE,SAAS;CAI9B;;AATD,AAMI,OANG,CAMH,CAAC,CAAC;EACE,MAAM,EAAE,GAAG;CACd",
+    "sources": [
+        "Phase4.module.scss"
+    ],
+    "names": [],
+    "file": "Phase4.module.css"
+}

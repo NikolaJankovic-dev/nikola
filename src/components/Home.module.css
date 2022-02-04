@@ -1,0 +1,102 @@
+.home {
+  position: relative;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.animediv {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 10;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.animedivmove {
+  position: fixed;
+  top: -100vh;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 10;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.aside {
+  position: fixed;
+  top: 0vh;
+  height: 100vh;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aside .spanactive {
+  margin-left: 3vw;
+  margin-bottom: 40px;
+  background-color: aliceblue;
+  width: 40px;
+  height: 3px;
+  cursor: pointer;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+.aside .spanpassive {
+  margin-left: 3vw;
+  margin-bottom: 40px;
+  background-color: aliceblue;
+  width: 24px;
+  height: 3px;
+  cursor: pointer;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+.one {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.two, .twoFromPage {
+  position: fixed;
+  width: 100%;
+  top: -100vh;
+}
+
+.two {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.three {
+  position: fixed;
+  width: 100%;
+  top: -200vh;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.four {
+  position: fixed;
+  width: 100%;
+  top: -300vh;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+/*# sourceMappingURL=Home.module.css.map */

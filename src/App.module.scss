@@ -1,0 +1,29 @@
+.app {
+  background: linear-gradient(0deg, rgb(6, 22, 32) 0%, rgb(11, 43, 73) 100%);
+  background: rgb(4, 13, 22);
+  background-size: 100% 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  transition: all ease 1s;
+  overflow: hidden;
+}
+.appPage {
+  // background: linear-gradient(45deg, rgb(6, 22, 32) 0%, rgb(11, 43, 73) 100%);
+
+  background: black;
+  background-size: 100% 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  transition: all ease 1s;
+  // overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+*:-webkit-scrollbar {
+  display: none;
+  background-color: #aaa;
+}
+ 

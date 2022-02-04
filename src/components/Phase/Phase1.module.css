@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap");
+.phase1 {
+  position: absolute;
+  height: 90vh;
+  width: 400px;
+  top: 10vh;
+  left: 10vw;
+  color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 70px;
+  overflow: hidden;
+}
+
+.phase1 h1 {
+  width: 200px;
+  padding-right: 200px;
+  font-size: 4.5em;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 400;
+}
+
+.phase1 h1 h1 {
+  width: 200px;
+  padding-right: 200px;
+  font-size: 4.5em;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 400;
+}
+
+.phase1cont {
+  position: absolute;
+  right: 200%;
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+
+.phase1contactive {
+  position: absolute;
+  right: 0%;
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+/*# sourceMappingURL=Phase1.module.css.map */

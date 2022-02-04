@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap");
+.phase2, .phase5 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  left: 0vw;
+  color: aliceblue;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 70px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.phase2 h1, .phase5 h1 {
+  font-size: 4.5em;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 400;
+  margin: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.phase2 {
+  top: 100vh;
+}
+
+.phase5 {
+  top: 0vh;
+}
+
+.phase2cont {
+  position: absolute;
+  top: 0vh;
+  padding-top: 40vh;
+  padding-left: 10vw;
+}
+
+.phase2contactive {
+  position: absolute;
+  padding-top: 40vh;
+  padding-left: 10vw;
+}
+
+@-webkit-keyframes active {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes active {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.imageDiv {
+  position: absolute;
+  top: 12vh;
+  right: 8vw;
+  width: 53vw;
+  height: 76vh;
+  background-image: url("https://i.imgur.com/GRrLIb7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.imageDivPage {
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  width: 61vw;
+  height: 100vh;
+  background-image: url("https://i.imgur.com/GRrLIb7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  z-index: 1000;
+}
+
+p {
+  color: aliceblue;
+}
+/*# sourceMappingURL=Phase2.module.css.map */

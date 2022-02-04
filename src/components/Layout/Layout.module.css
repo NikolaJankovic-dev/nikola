@@ -1,0 +1,60 @@
+.starscont, .starscontPage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.imgur.com/03Z4l6H.png");
+  background-size: cover;
+}
+
+.starscont, .lights {
+  opacity: 1;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.starscontPage, .lightsPage {
+  opacity: 0;
+  -webkit-transition: all ease 1ms;
+  transition: all ease 1ms;
+}
+
+.deathstarcont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.deathstar {
+  width: 40%;
+  height: 40%;
+  background-image: url("https://i.imgur.com/bq97cum.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  -webkit-transition: left ease 1s, top ease 1s, opacity ease 300ms;
+  transition: left ease 1s, top ease 1s, opacity ease 300ms;
+}
+
+.deathstarpassive {
+  width: 40%;
+  height: 40%;
+  background-image: url("https://i.imgur.com/bq97cum.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -10vh;
+  left: 150%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: left ease 1s, top ease 1s, opacity ease 300ms;
+  transition: left ease 1s, top ease 1s, opacity ease 300ms;
+}
+/*# sourceMappingURL=Layout.module.css.map */
