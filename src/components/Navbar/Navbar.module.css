@@ -13,7 +13,9 @@
   top: 3vh;
   left: 5vw;
   margin: 0;
+  font-size: 56px;
   font-family: 'Days One', sans-serif;
+  font-weight: 100;
   z-index: 5;
 }
 
@@ -23,16 +25,17 @@
   top: 3vh;
   right: 5vw;
   z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
   cursor: pointer;
-}
-
-.menu div {
-  color: #a15b5b;
 }
 
 .menuActive, .menuPassive {
   width: 80px;
   overflow: hidden;
+  margin-top: 10px;
 }
 
 .menuActive span, .menuPassive span {
