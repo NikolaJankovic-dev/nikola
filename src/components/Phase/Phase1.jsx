@@ -2,17 +2,22 @@ import React from "react";
 import LightSaber from "./LightSaber/LightSaber";
 import style from "./Phase1.module.css";
 
-const Phase1 = ({phase}) => {
+const Phase1 = ({phase, setPhase, page, setPage}) => {
   return (
-    <div className={style.phase1}>
-      <div className={phase === 1 ? style.phase1contactive : style.phase1cont}>
+    <div>
+    <div className={!page ? style.phase2 : style.phase5}>
+      
+      <div className={!page ? style.phase2contactive : style.phase2cont}>
         <h1>
-          Nikola <br /> Jankovic
+          
+          PROJECTS
         </h1>
         <LightSaber />
-
+        
         <p>Frontend Developer</p>
       </div>
+      <div className={page ? style.imageDivPage : style.imageDiv}></div> 
+    </div>
     </div>
   );
 };

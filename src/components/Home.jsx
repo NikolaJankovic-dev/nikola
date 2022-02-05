@@ -21,7 +21,7 @@ useEffect(() => {
         setStylin(fromPage ? style.twoFromPage : style.two);
       }
       if (phase === 3) {
-        setStylin(style.three);
+        setStylin(fromPage ? style.threeFromPage : style.three);
       }
       if (phase === 4) {
         setStylin(style.four);
@@ -32,9 +32,9 @@ useEffect(() => {
   return (
     <div className={style.home}>
       <div className={styling}>     
-        <Phase1 phase={phase}/>
+        <Phase1 phase={phase} setPhase={setPhase} setPage={setPage} page={page} fromPage={fromPage} setFromPage={setFromPage}/>
         <Phase2 phase={phase} setPhase={setPhase} setPage={setPage} page={page} fromPage={fromPage} setFromPage={setFromPage}/>
-        <Phase3 phase={phase} />
+        <Phase3 phase={phase} setPhase={setPhase} setPage={setPage} page={page} fromPage={fromPage} setFromPage={setFromPage}/>
         <Phase4 phase={phase} />
       </div>
     </div>

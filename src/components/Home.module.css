@@ -22,10 +22,13 @@
   transition: all ease 1s;
 }
 
-.three {
+.three, .threeFromPage {
   position: fixed;
   width: 100%;
   top: -200vh;
+}
+
+.three {
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
 }

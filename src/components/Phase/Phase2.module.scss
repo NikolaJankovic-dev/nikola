@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 
 .phase2, .phase5 {
   position: relative;
@@ -16,7 +16,8 @@
   h1 {
  
     font-size: 4.5em;
-    font-family: "Cinzel Decorative", cursive;
+    font-family: 'Days One', sans-serif;
+
     font-weight: 400;
     // height: 100%;
     margin: 0;
@@ -27,7 +28,7 @@
   }
 }
 .phase2 {
-    top: 100vh;
+    top: 0vh;
 }
 .phase5 {
     top: 0vh;
@@ -61,7 +62,7 @@
   right: 8vw;
   width: 53vw;
   height: 76vh;
-  background-image: url('https://i.imgur.com/GRrLIb7.png');
+  background-image: url('https://wallpaperaccess.com/full/1949688.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +74,7 @@
   right: 0vw;
   width: 61vw;
   height: 100vh;
-  background-image: url('https://i.imgur.com/GRrLIb7.png');
+  background-image: url('https://wallpaperaccess.com/full/1949688.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

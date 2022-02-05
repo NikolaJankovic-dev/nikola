@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 .navbar, .navbarDown {
-  z-index: 2;
+  z-index: 4;
   color: #fff;
 }
 .navbarDown {
@@ -10,15 +11,16 @@
   top: 3vh;
   left: 5vw;
   margin: 0;
+  font-family: 'Days One', sans-serif;
 
-  z-index: 2;
+  z-index: 5;
 }
 .menu {
  font-size: 32px;
   position: fixed;
   top: 3vh;
   right: 5vw;
-  z-index: 2;
+  z-index: 5;
 //   display: inline-block;
   cursor: pointer;
 //   background-color: #fff;
@@ -26,6 +28,127 @@
       color: rgb(161, 91, 91);
   }
 }
+.menuActive, .menuPassive {
+    width: 80px;
+    // height: 80px;
+    overflow: hidden;
+    span {
+        display: block;
+        width: 100%;
+        // box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+        border-radius: 30px;
+        // border: 1px black solid;
+        height: 3px;
+        // background: #fff;
+        transition: all .3s;
+        position: relative;
+        // margin-top: 14px;
+
+      }
+      
+      span + span {
+        margin-top: 14px;
+      }
+}
+.menuActive span:nth-child(1){
+    animation: ease 0.7s topp forwards;
+    
+}
+.menuPassive span:nth-child(1) {
+    animation: ease 0.7s top-2 forwards;
+}
+.menuActive span:nth-child(2){
+    animation: ease .7s scaled forwards;
+}
+.menuPassive span:nth-child(2){
+    animation: ease .7s scaled-2 forwards;
+}
+.menuActive span:nth-child(3){
+    animation: ease .7s bottom-1 forwards;
+}
+.menuPassive span:nth-child(3){
+    animation: ease .7s bottom-2 forwards;
+}
+@keyframes topp {
+    0% {
+      top: 0;
+      transform: rotate(0);
+    }
+    50% {
+      top: 22px;
+      transform: rotate(0);
+    }
+    100% {
+      top: 22px;
+      transform: rotate(45deg);
+    }
+  }
+  
+  @keyframes top-2 {
+    0% {
+      top: 22px;
+      transform: rotate(45deg);
+    }
+    50% {
+      top: 22px;
+      transform: rotate(0deg);
+    }
+    100% {
+      top: 0;
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes bottom-1 {
+    0% {
+      bottom: 0;
+      transform: rotate(0);
+    }
+    50% {
+      bottom: 22px;
+      transform: rotate(0);
+    }
+    100% {
+      bottom: 22px;
+      transform: rotate(135deg);
+    }
+  }
+  
+  @keyframes bottom-2 {
+    0% {
+      bottom: 22px;
+      transform: rotate(135deg);
+    }
+    50% {
+      bottom: 22px;
+      transform: rotate(0);
+    }
+    100% {
+      bottom: 0;
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes scaled {
+    50% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes scaled-2 {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 // .menu::before, .menu::after {
 //     content: "";
 //     width: 35px;

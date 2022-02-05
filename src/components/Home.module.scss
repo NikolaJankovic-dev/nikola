@@ -23,13 +23,14 @@
 .two {
     transition: all ease 1s;
 }
-.three {
+.three, .threeFromPage {
     position: fixed;
     width: 100%;
     top: -200vh;
+    
+}
+.three {
     transition: all ease 1s;
-
-    // transform: translate3d(0px, -200vh, 0px);
 }
 .four {
     position: fixed;

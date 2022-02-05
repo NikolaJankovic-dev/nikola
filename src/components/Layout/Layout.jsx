@@ -41,7 +41,7 @@ const Layout = ({ page, phase }) => {
             transform: `translateX(${posX / 10}%) translateY(${posY / 10}%)`,
           }}
         ></div>
-        <div className={!page ? style.deathstarcont : style.deathstarcont}>
+        {/* <div className={!page ? style.deathstarcont : style.deathstarcont}>
           <div
             className={
               (!page && phase === 1) || phase === 0
@@ -53,8 +53,8 @@ const Layout = ({ page, phase }) => {
                 -50 + posY / 10
               }%)`,
             }}
-          ></div>
-        </div>
+          ></div> */}
+        {/* </div> */}
       </div>
     </div>
   );
