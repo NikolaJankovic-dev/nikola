@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useLayoutEffect} from 'react';
 import Phase3 from '../Phase/Phase3';
 import style from './AboutMe.module.css'
 const AboutMe = ({phase, setPhase, page, setPage, fromPage, setFromPage}) => {
-    useEffect(() => {
+    useLayoutEffect(() => {
         setPage(true);
         setFromPage(true);
         setPhase(3);

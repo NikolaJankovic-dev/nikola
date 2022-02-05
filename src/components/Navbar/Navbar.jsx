@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import style from "./Navbar.module.css";
 import styles from "../../App.module.css";
 import { Link, NavLink, useNavigate } from "react-router-dom";
@@ -28,7 +28,7 @@ const Navbar = ({ page, setPhase, setFromPage }) => {
     }, distance);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.document.addEventListener("scroll", function () {
       if (window.scrollY > window.innerHeight) {
         setColor(style.navbarDown);

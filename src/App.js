@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useLayoutEffect, useCallback } from "react";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { browserHistory } from "react-router";
 import style from "./App.module.css";
@@ -62,13 +62,13 @@ function App() {
     handlePop();
   }, [params]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.document.body.addEventListener("popstate", handlePop);
     return window.document.body.removeEventListener("popstate", handlePop);
   }, ["click"]);
   window.document.body.addEventListener("popstate", handlePop);
 
-  useEffect((e) => {
+  useLayoutEffect((e) => {
     if (!page) {
       window.document.addEventListener("wheel", handleScroll);
     }
