@@ -2,7 +2,7 @@
 .phase2, .phase5 {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   left: 0vw;
   color: aliceblue;
   -webkit-box-orient: horizontal;
@@ -14,7 +14,6 @@
           justify-content: center;
   gap: 70px;
   overflow: hidden;
-  z-index: 1000;
 }
 
 .phase2 h1, .phase5 h1 {
@@ -93,7 +92,6 @@
   background-size: cover;
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
-  z-index: 1000;
 }
 
 p {

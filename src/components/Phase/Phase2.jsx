@@ -5,8 +5,10 @@ import style from "./Phase2.module.css";
 import LightSaber from "./LightSaber/LightSaber";
 
 
-const Phase2 = ({phase, page, setPage}) => {
-  
+const Phase2 = ({phase, setPhase, page, setPage}) => {
+  // useEffect(() => {
+  //   setPhase(2)
+  // },[]);
   return (
     <div>
     <div className={!page ? style.phase2 : style.phase5}>

@@ -8,14 +8,11 @@ const Projects = ({ phase, setPhase, page, setPage, fromPage, setFromPage}) => {
     setPage(true);
     setFromPage(true);
     setPhase(2);
+    if (phase === 1){
+    setPhase(2);
+    }
   },[]);
-  const scrollUp = () => {
-    document.getElementById("top").scroll(0,0)
-    // window.scrollTo({
-    //   top: 0,
-    //   behavior: 'auto'
-    // })
-  }
+  
   return (
     <div id="top">
       
@@ -24,7 +21,7 @@ const Projects = ({ phase, setPhase, page, setPage, fromPage, setFromPage}) => {
         <h1>PROJECTS</h1>
         <br />
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus illum at veritatis distinctio, nisi dignissimos aspernatur voluptates officiis modi ipsum doloribus alias fugiat voluptatem veniam corporis eum consectetur velit mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam voluptas cum quibusdam ullam laudantium voluptatum, consectetur omnis ea, eaque consequuntur itaque est repellendus neque ratione inventore. Aut, odit illum? <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <button  onClick={()=>setPhase(2)}>Klik</button>
+      
 
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero atque harum cupiditate provident aspernatur dolorum deleniti labore temporibus distinctio, odio sapiente numquam tempore facere rem repudiandae iure recusandae excepturi est.
         Culpa at non amet possimus, quod nobis reprehenderit officia saepe delectus ullam perferendis cumque vitae deleniti numquam debitis nisi! Eum placeat labore harum quos, ipsa ullam quis voluptates est perspiciatis!

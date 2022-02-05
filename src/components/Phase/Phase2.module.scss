@@ -3,7 +3,7 @@
 .phase2, .phase5 {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   left: 0vw;
   color: aliceblue;
 //   display: flex;
@@ -11,7 +11,7 @@
   justify-content: center;
   gap: 70px;
   overflow: hidden;
-  z-index: 1000;
+  
 
   h1 {
  
@@ -78,7 +78,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   transition: all ease 1s;
-  z-index: 1000;
+
 
 }
 p {
