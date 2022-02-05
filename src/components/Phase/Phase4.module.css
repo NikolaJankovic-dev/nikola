@@ -1,12 +1,102 @@
-.phase4 {
-  position: absolute;
-  height: 90vh;
-  top: 310vh;
-  left: 10vw;
-  background-color: chocolate;
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+.phase2, .phase5 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  left: 0vw;
+  color: aliceblue;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 70px;
+  overflow: hidden;
 }
 
-.phase4 p {
-  margin: 0vh;
+.phase2 h1, .phase5 h1 {
+  font-size: 4.5em;
+  font-family: 'Days One', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.phase2 {
+  top: 0vh;
+}
+
+.phase5 {
+  top: 0vh;
+}
+
+.phase2cont {
+  position: absolute;
+  top: 0vh;
+  padding-top: 40vh;
+  padding-left: 10vw;
+}
+
+.phase2contactive {
+  position: absolute;
+  top: 12vh;
+  left: 8vw;
+  z-index: 1;
+  width: 558px;
+}
+
+@-webkit-keyframes active {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes active {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.imageDiv {
+  position: absolute;
+  top: 12vh;
+  right: 8vw;
+  width: 53vw;
+  height: 76vh;
+  background-image: url("https://i.imgur.com/dEot7B9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.imageDivPage {
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  width: 61vw;
+  height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/1949688.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+p {
+  color: aliceblue;
 }
 /*# sourceMappingURL=Phase4.module.css.map */

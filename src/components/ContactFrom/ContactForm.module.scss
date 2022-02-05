@@ -1,0 +1,33 @@
+// .inputs {
+//     // background-color: aliceblue;
+//     border-bottom: 1px white solid;
+//     label {
+//         color: white;
+//     }
+//     div:before {
+//         color: rgb(209, 43, 43);
+//     }
+// }
+.form {
+    background: rgb(240,248,255);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+// padding: 40px;
+// div {
+//     margin: 20px auto;
+//     width: 90%;
+// }
+}
+.formCont {
+    width: 60%;
+    margin: 20px auto;
+    h4, p {
+        color: black;
+    }
+    div {
+        margin-bottom: 2.7vh;
+    }
+}
