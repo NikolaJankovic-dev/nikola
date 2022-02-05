@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import Phase2 from "../Phase/Phase2";
 import style from './Projects.module.css'
 
 const Projects = ({ phase, setPhase, page, setPage, fromPage, setFromPage}) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     setPage(true);
     setFromPage(true);
     setPhase(2);

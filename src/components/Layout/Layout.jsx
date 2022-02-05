@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import style from "./Layout.module.css";
 
 const Layout = ({ page, phase }) => {
   const [posX, setPosX] = useState(0);
   const [posY, setPosY] = useState(0);
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.document.addEventListener("mousemove", function (e) {
       setPosX(e.clientX / 50);
       setPosY(e.clientY / 50);

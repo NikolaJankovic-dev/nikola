@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import Aside from "./Aside/Aside";
 import Navbar from "./Navbar/Navbar";
 import Phase1 from "./Phase/Phase1";
@@ -9,10 +9,11 @@ import Phase4 from "./Phase/Phase4";
 
 const Home = ({ phase, setPhase, page, setPage, fromPage, setFromPage }) => {
   const [styling, setStylin] = useState(style.one);
-  useEffect(() => {
+  useLayoutEffect(() => {
     setPage(false);
-  }, []);
-  useEffect(
+    setFromPage(false)
+  },[]);
+  useLayoutEffect(
     (e) => {
       if (phase === 1) {
         setStylin(style.one);
