@@ -7,11 +7,11 @@ import style from "./Home.module.css";
 import Phase3 from "./Phase/Phase3";
 import Phase4 from "./Phase/Phase4";
 
-const Home = ({phase, setPhase, page, setPage, fromPage, setFromPage}) => {
+const Home = ({ phase, setPhase, page, setPage, fromPage, setFromPage }) => {
   const [styling, setStylin] = useState(style.one);
-useEffect(() => {
-  setPage(false)
-},[]);
+  useEffect(() => {
+    setPage(false);
+  }, []);
   useEffect(
     (e) => {
       if (phase === 1) {
@@ -31,11 +31,37 @@ useEffect(() => {
   );
   return (
     <div className={style.home}>
-      <div className={styling}>     
-        <Phase1 phase={phase} setPhase={setPhase} setPage={setPage} page={page} fromPage={fromPage} setFromPage={setFromPage}/>
-        <Phase2 phase={phase} setPhase={setPhase} setPage={setPage} page={page} fromPage={fromPage} setFromPage={setFromPage}/>
-        <Phase3 phase={phase} setPhase={setPhase} setPage={setPage} page={page} fromPage={fromPage} setFromPage={setFromPage}/>
-        <Phase4 phase={phase} />
+      <div className={styling}>
+        <Phase1
+          phase={phase}
+          setPhase={setPhase}
+          setPage={setPage}
+          page={page}
+          fromPage={fromPage}
+          setFromPage={setFromPage}
+        />
+        <Phase2
+          phase={phase}
+          setPhase={setPhase}
+          setPage={setPage}
+          page={page}
+          fromPage={fromPage}
+          setFromPage={setFromPage}
+        />
+        <Phase3
+          phase={phase}
+          setPhase={setPhase}
+          setPage={setPage}
+          page={page}
+          fromPage={fromPage}
+          setFromPage={setFromPage}
+        />
+        <Phase4 phase={phase}
+          setPhase={setPhase}
+          setPage={setPage}
+          page={page}
+          fromPage={fromPage}
+          setFromPage={setFromPage} />
       </div>
     </div>
   );
