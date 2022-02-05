@@ -11,8 +11,9 @@
   top: 3vh;
   left: 5vw;
   margin: 0;
+  font-size: 56px;
   font-family: 'Days One', sans-serif;
-
+    font-weight: 100;
   z-index: 5;
 }
 .menu {
@@ -21,17 +22,17 @@
   top: 3vh;
   right: 5vw;
   z-index: 5;
-//   display: inline-block;
+ display: flex;
+ gap: 7px;
   cursor: pointer;
 //   background-color: #fff;
-  div {
-      color: rgb(161, 91, 91);
-  }
+  
 }
 .menuActive, .menuPassive {
     width: 80px;
     // height: 80px;
     overflow: hidden;
+    margin-top: 10px;
     span {
         display: block;
         width: 100%;
