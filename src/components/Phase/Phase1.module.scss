@@ -11,6 +11,7 @@
   justify-content: center;
   gap: 70px;
   overflow: hidden;
+
   
 
   h1 {
@@ -47,6 +48,7 @@
     position: absolute;
     padding-top: 40vh;
     padding-left: 10vw;
+    z-index: 1;
 
     // right: 0%;
     // transition: all ease 2s;

@@ -1,11 +1,9 @@
 .form {
-  background: aliceblue;
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(5, 32, 58, 0.404);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(61, 61, 61, 0.075);
 }
 
 .formCont {
@@ -14,10 +12,18 @@
 }
 
 .formCont h4, .formCont p {
-  color: black;
+  color: #F0F8FF;
 }
 
 .formCont div {
   margin-bottom: 2.7vh;
+}
+
+.inputs div:before, .inputs div:hover, .inputs:hover div:before, .inputs:hover div:hover {
+  border-color: #F0F8FF;
+}
+
+.inputs div:before:hover, .inputs:hover div:before:hover {
+  border-color: aqua;
 }
 /*# sourceMappingURL=ContactForm.module.css.map */

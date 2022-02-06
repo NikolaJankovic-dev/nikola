@@ -10,7 +10,7 @@ const Phase1 = ({phase, setPhase, page, setPage}) => {
       <div className={!page ? style.phase2contactive : style.phase2cont}>
         <h1>
           
-          PROJECTS
+          Portfolio
         </h1>
         <LightSaber />
         

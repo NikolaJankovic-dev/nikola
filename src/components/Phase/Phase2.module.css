@@ -40,12 +40,14 @@
   top: 0vh;
   padding-top: 40vh;
   padding-left: 10vw;
+  z-index: 1;
 }
 
 .phase2contactive {
   position: absolute;
   padding-top: 40vh;
   padding-left: 10vw;
+  z-index: 1;
 }
 
 @-webkit-keyframes active {

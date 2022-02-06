@@ -9,12 +9,12 @@
 //     }
 // }
 .form {
-    background: rgb(240,248,255);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(5, 32, 58, 0.404);
+// box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+border: 1px solid rgba(61, 61, 61, 0.075);
 // padding: 40px;
 // div {
 //     margin: 20px auto;
@@ -25,9 +25,20 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 60%;
     margin: 20px auto;
     h4, p {
-        color: black;
+        color: #F0F8FF;
     }
     div {
         margin-bottom: 2.7vh;
     }
+}
+.inputs, .inputs:hover {
+    
+        div:before, div:hover {
+            border-color: #F0F8FF;
+        
+    }
+    div:before:hover {
+        border-color: aqua;
+    
+}
 }
