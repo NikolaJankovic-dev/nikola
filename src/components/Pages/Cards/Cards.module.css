@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+.temboCont {
+  position: relative;
+  width: 880px;
+  z-index: 20;
+  margin: 100px auto;
+  margin-left: auto;
+}
+
+.shadowMask {
+  position: absolute;
+  left: auto;
+  top: -22px;
+  right: -122px;
+  display: block;
+  width: 105%;
+  max-width: 105%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardHolder {
+  position: relative;
+}
+
+.perspectiveHolder {
+  position: relative;
+  z-index: 10;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+}
+
+.case {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 100%;
+  -webkit-transition: all ease-out 350ms;
+  transition: all ease-out 350ms;
+  color: white;
+  text-decoration: none;
+}
+
+.holder1,
+.holder2,
+.holder3, .holder4 {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  min-height: 480px;
+  margin-bottom: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-columns: #fff;
+          columns: #fff;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.holder1 {
+  background-color: #0f2036;
+}
+
+.holder2 {
+  background-color: #212529;
+}
+
+.holder3 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(1, 155, 173, 0.768242)), color-stop(45%, rgba(153, 116, 5, 0.807)));
+  background: linear-gradient(90deg, rgba(1, 155, 173, 0.768242) 0%, rgba(153, 116, 5, 0.807) 45%);
+}
+
+.holder4 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(1, 104, 173, 0.768)), to(rgba(153, 5, 121, 0.807)));
+  background: linear-gradient(90deg, rgba(1, 104, 173, 0.768) 50%, rgba(153, 5, 121, 0.807));
+}
+
+.column1 {
+  will-change: transform;
+  -webkit-transform: translate3d(0px, -0.8381px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform: translate3d(0px, -0.8381px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  padding: 96px 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.logo1,
+.logo2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 56px;
+  font-size: 40px;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+.logo2 {
+  font-family: "Staatliches", cursive;
+}
+
+.aboutProject {
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  opacity: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  max-width: 400px;
+  margin-bottom: 64px;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+.column2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.imageCase {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.noimg {
+  position: relative;
+  top: -6px;
+  right: -9px;
+  max-width: 95%;
+  opacity: 0;
+}
+
+.phone {
+  position: absolute;
+  right: -8%;
+  bottom: -63%;
+  z-index: 1;
+  width: 105%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.tv {
+  position: relative;
+  height: 105%;
+  right: -10px;
+  top: -20px;
+  max-width: 95%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.desk {
+  position: relative;
+  height: 125%;
+  right: -10px;
+  top: -100px;
+  max-width: 95%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.laptop {
+  position: relative;
+  right: 10px;
+  top: -60px;
+  max-width: 95%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.oval {
+  left: -5%;
+  top: auto;
+  right: 0;
+  bottom: -22%;
+  width: 130%;
+  max-width: 130%;
+  position: absolute;
+}
+
+.highlight {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  z-index: 99;
+  display: block;
+  width: 90%;
+  height: 130%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.07;
+  -webkit-filter: blur(75px);
+          filter: blur(75px);
+}
+/*# sourceMappingURL=Cards.module.css.map */

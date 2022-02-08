@@ -16,7 +16,7 @@ const Phase2 = ({phase, setPhase, page, setPage}) => {
       <div className={!page ? style.phase2contactive : style.phase2cont}>
         <h1>
           
-          PROJECTS
+          Projects
         </h1>
         <LightSaber />
         <Link to='/projects'>
