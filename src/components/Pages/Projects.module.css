@@ -1,12 +1,15 @@
 .projectsCont {
-  position: relative;
+  position: absolute;
+  top: 100vh;
   width: 100%;
-  background-color: rgba(170, 194, 214, 0.719);
-  -webkit-backdrop-filter: drop-shadow(4px 4px 10px blue);
-          backdrop-filter: drop-shadow(4px 4px 10px blue);
-}
-
-.projectsCont h1 {
-  text-align: center;
+  background-color: aliceblue;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=Projects.module.css.map */

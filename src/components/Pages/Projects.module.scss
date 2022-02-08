@@ -1,9 +1,9 @@
 .projectsCont {
-    position: relative;
-    width: 100%;
-    background-color: rgba(170, 194, 214, 0.719);
-    backdrop-filter: drop-shadow(4px 4px 10px blue);
-    h1 {
-        text-align: center;
-    }
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  background-color: rgb(240,248,255);
+    line-height: 36px;
+  display: flex;
+  flex-direction: column;
 }
