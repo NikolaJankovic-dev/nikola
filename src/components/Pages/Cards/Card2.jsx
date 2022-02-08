@@ -49,7 +49,7 @@ const Card2 = () => {
           style={{
             willChange: "transform",
             transform: `rotateX(0deg) rotateY(${
-              cardX / 90
+              -cardX / 90
             }deg)`,
             transformStyle: "preserve-3d",
             opacity: "1",
