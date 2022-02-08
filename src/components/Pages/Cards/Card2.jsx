@@ -43,11 +43,12 @@ const Card2 = () => {
     <div className={style.cardHodler}>
       <div className={style.perspectiveHolder}>
         <a
-          href="/"
+          href="https://nikolatvmaze-850rvk16e-nikolajankovic-dev.vercel.app/index.html"
+          target="_blank"
           className={style.case}
           style={{
             willChange: "transform",
-            transform: `translate3d(0px,0px,0) rotateX(${-cardY}deg) rotateY(${
+            transform: `rotateX(0deg) rotateY(${
               cardX / 90
             }deg)`,
             transformStyle: "preserve-3d",
@@ -58,18 +59,13 @@ const Card2 = () => {
             <div className={style.column1}>
               <div className={style.logo2}>BITSHOW</div>
               <div className={style.aboutProject}>
-                Sharing = caring. In the literal and literary sense.
-                Here’s how we helped a Bay Area startup design for
-                connection.
+              Track your favorite TV shows with BitShow!
               </div>
             </div>
             <div className={style.column2}>
               <div
                 className={style.imageCase}
                 style={{
-                  willChange: "transform",
-                  transform: `translate3d(0px,3px,0) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)`,
-                  transformStyle: "preserve-3d",
                   opacity: "1",
                 }}
               >
@@ -84,7 +80,7 @@ const Card2 = () => {
                     willChange: "transform",
                     transform: `translate3d(${-cardX / 50}px,${
                       -cardY / 1
-                    }px,0) rotateX(0deg) scale3d(1,1,1) rotateY(0deg)`,
+                    }px,0)`,
                     transformStyle: "preserve-3d",
                     opacity: "1",
                   }}

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import style from './Cards.module.css'
+import style from "./Cards.module.css";
+import { Button, TextField } from "@mui/material";
 
 const Card4 = () => {
-    const [cardX, setCardX] = useState(10);
+  const [cardX, setCardX] = useState(10);
   const [cardY, setCardY] = useState(1);
   const [opacity, setOpacity] = useState(0.3);
   const handleMouseMove = (e) => {
@@ -12,7 +13,7 @@ const Card4 = () => {
       (card.offsetParent.offsetTop +
         card.offsetTop +
         card.offsetHeight / 2 -
-        (e.pageY/2)) /
+        e.pageY / 2) /
         90
     );
     setOpacity(1);
@@ -25,77 +26,92 @@ const Card4 = () => {
   };
   return (
     <div
-    id="tembo"
-    className={style.temboCont}
-    onMouseMove={handleMouseMove}
-    onMouseLeave={handleMouseLeave}
-  >
-    <img
-      src="https://i.imgur.com/4dVUGm8.png"
-      className={style.shadowMask}
-      style={{
-        willChange: "transform",
-        transform: `translate3d(${cardX / 25}px,${cardY}px,0)`,
-        transformStyle: "preserve-3d",
-        opacity: `${opacity}`,
-      }}
-    />
-    <div className={style.cardHodler}>
-      <div className={style.perspectiveHolder}>
-        <a
-          href="/"
-          className={style.case}
-          style={{
-            willChange: "transform",
-            transform: `translate3d(0px,0px,0) rotateX(${-cardY}deg) rotateY(${
-              -cardX / 90
-            }deg)`,
-            transformStyle: "preserve-3d",
-            opacity: "1",
-          }}
-        >
-          <div className={style.holder4}>
-            <div className={style.column1}>
-              <div className={style.logo2}>TEMBO</div>
-              <div className={style.aboutProject}>
-                Sharing = caring. In the literal and literary sense.
-                Here’s how we helped a Bay Area startup design for
-                connection.
+      id="tembo"
+      className={style.temboCont}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      <img
+        src="https://i.imgur.com/4dVUGm8.png"
+        className={style.shadowMask}
+        style={{
+          willChange: "transform",
+          transform: `translate3d(${cardX / 25}px,${cardY}px,0)`,
+          transformStyle: "preserve-3d",
+          opacity: `${opacity}`,
+        }}
+      />
+      <div className={style.cardHodler}>
+        <div className={style.perspectiveHolder}>
+          <div
+            href="/"
+            className={style.case}
+            style={{
+              willChange: "transform",
+              transform: `rotateY(${
+                -cardX / 90
+              }deg)`,
+              transformStyle: "preserve-3d",
+              opacity: "1",
+            }}
+          >
+            <div className={style.holder4}>
+              <div className={style.column1}>
+                <div className={style.logo2}>Job-Book</div>
+                <div className={style.aboutProject}>
+                  Certification project at BIT. On this web app, you can track,
+                  create and delete candidates and interview reports. To get
+                  access you will need to{" "}
+                  <a
+                    href="https://www.dropbox.com/s/ikerwc6edzu5aa3/interviews-reports-api-mock.zip?dl=0"
+                    target="_blank"
+                    className={style.download}
+
+                  >
+                    download
+                  </a>{" "}
+                  and start the database (npm start). Login parameters: <br />
+                  username - dev@dev.com <br /> password - developer.
+                  <a
+                    href="https://job-book.vercel.app/"
+                    target="_blank"
+                    style={{textDecoration:"none"}}
+                  >
+                    <br />
+                    <Button variant="contained">Visit</Button>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className={style.column2}>
-              <div
-                className={style.imageCase}
-                style={{
-                  willChange: "transform",
-                  transform: `translate3d(0px,3px,0) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)`,
-                  transformStyle: "preserve-3d",
-                  opacity: "1",
-                }}
-              >
-                <img
-                  src="https://assets.website-files.com/5d27763c46ba9e561dc5b972/5f43b0ed916fd9db04a3eaa4_1231235f3fb3205e35062caf540258_5d3203df882ef3018f9f55f1_Level%204%20444.png"
-                  className={style.noimg}
-                />
-                <img
-                  src="https://i.imgur.com/F52kFyp.png"
-                  className={style.laptop}
+              <div className={style.column2}>
+                <div
+                  className={style.imageCase}
                   style={{
-                    willChange: "transform",
-                    transform: `translate3d(${-cardX / 50}px,${
-                      -cardY / 1
-                    }px,0) rotateX(0deg) scale3d(1,1,1) rotateY(0deg)`,
-                    transformStyle: "preserve-3d",
                     opacity: "1",
                   }}
-                />
+                >
+                  <img
+                    src="https://assets.website-files.com/5d27763c46ba9e561dc5b972/5f43b0ed916fd9db04a3eaa4_1231235f3fb3205e35062caf540258_5d3203df882ef3018f9f55f1_Level%204%20444.png"
+                    className={style.noimg}
+                  />
+                  <img
+                    src="https://i.imgur.com/F52kFyp.png"
+                    className={style.laptop}
+                    style={{
+                      willChange: "transform",
+                      transform: `translate3d(${-cardX / 50}px,${
+                        -cardY / 1
+                      }px,0)`,
+                      transformStyle: "preserve-3d",
+                      opacity: "1",
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 
