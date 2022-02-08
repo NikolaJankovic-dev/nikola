@@ -26,7 +26,7 @@ const Card1 = () => {
   return (
     <div
     id="tembo"
-    className={style.temboCont}
+    className={style.resetCont}
     onMouseMove={handleMouseMove}
     onMouseLeave={handleMouseLeave}
   >
@@ -43,11 +43,12 @@ const Card1 = () => {
     <div className={style.cardHodler}>
       <div className={style.perspectiveHolder}>
         <a
-          href="/"
+          href="https://reset-10ae0.web.app/"
+          target="_blank"
           className={style.case}
           style={{
             willChange: "transform",
-            transform: `translate3d(0px,0px,0) rotateX(${cardY}deg) rotateY(${
+            transform: `rotateY(${
               -cardX / 90
             }deg)`,
             transformStyle: "preserve-3d",
@@ -56,20 +57,15 @@ const Card1 = () => {
         >
           <div className={style.holder1}>
             <div className={style.column1}>
-              <div className={style.logo1}>RESET</div>
+              <div><img  className={style.logo1} src="https://i.imgur.com/2QhJiKO.png"/> </div>
               <div className={style.aboutProject}>
-                Sharing = caring. In the literal and literary sense.
-                Here’s how we helped a Bay Area startup design for
-                connection.
+              Reset is a voting platform. Users choose the biggest hit of 2021 in several categories. Reset was very popular on social media on December 2021 and January 2022.
               </div>
             </div>
             <div className={style.column2}>
               <div
                 className={style.imageCase}
                 style={{
-                  willChange: "transform",
-                  transform: `translate3d(0px,3px,0) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)`,
-                  transformStyle: "preserve-3d",
                   opacity: "1",
                 }}
               >
@@ -84,7 +80,7 @@ const Card1 = () => {
                     willChange: "transform",
                     transform: `translate3d(${-cardX / 50}px,${
                       -cardY / 1
-                    }px,0) rotateX(0deg) scale3d(1,1,1) rotateY(0deg)`,
+                    }px,0)`,
                     transformStyle: "preserve-3d",
                     opacity: "1",
                   }}

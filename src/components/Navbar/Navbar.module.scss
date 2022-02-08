@@ -14,14 +14,14 @@
   font-size: 56px;
   font-family: 'Days One', sans-serif;
     font-weight: 100;
-  z-index: 5;
+  z-index: 200;
 }
 .menu {
  font-size: 32px;
   position: fixed;
   top: 3vh;
   right: 5vw;
-  z-index: 5;
+  z-index: 200;
  display: flex;
  gap: 7px;
   cursor: pointer;

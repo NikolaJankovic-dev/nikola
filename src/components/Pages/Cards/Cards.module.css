@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
-.temboCont {
+.temboCont, .resetCont {
   position: relative;
   width: 880px;
   z-index: 20;
-  margin: 100px auto;
   margin-left: auto;
+  margin-right: auto;
+}
+
+.resetCont {
+  margin-top: 100px;
 }
 
 .shadowMask {
@@ -19,7 +23,7 @@
   margin-right: auto;
 }
 
-.cardHolder {
+.cardsHolder {
   position: relative;
 }
 
@@ -112,7 +116,7 @@
   -ms-flex-align: start;
       align-items: flex-start;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .logo1,
@@ -129,6 +133,10 @@
   font-weight: 300;
 }
 
+.logo1 {
+  width: 150px;
+}
+
 .logo2 {
   font-family: "Staatliches", cursive;
 }
@@ -141,9 +149,16 @@
           transform-style: preserve-3d;
   max-width: 400px;
   margin-bottom: 64px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 34px;
   font-weight: 300;
+  z-index: 300;
+}
+
+.download, .download:visited {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 .column2 {
@@ -181,6 +196,7 @@
   right: -9px;
   max-width: 95%;
   opacity: 0;
+  z-index: -10;
 }
 
 .phone {
@@ -216,7 +232,7 @@
 .laptop {
   position: relative;
   right: 10px;
-  top: -60px;
+  top: -130px;
   max-width: 95%;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
