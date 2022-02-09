@@ -11,16 +11,16 @@ const Phase2 = ({phase, setPhase, page, setPage}) => {
   // },[]);
   return (
     <div>
-    <div className={!page ? style.phase2 : style.phase5}>
+    <div className={style.phase2}>
       
-      <div className={!page ? style.phase2contactive : style.phase2cont}>
+      <div className={style.phase2cont}>
         <h1>
           
           Projects
         </h1>
         <LightSaber />
-        <Link to='/projects'>
-        <p>Frontend Developer</p></Link>
+        <Link to='/projects' className={page ? style.linkPage : style.link}>
+        <button className={style.showMore}>Show me more</button></Link>
       </div>
       <div className={page ? style.imageDivPage : style.imageDiv}></div> 
     </div>
