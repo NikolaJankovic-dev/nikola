@@ -3,7 +3,7 @@
 .temboCont, .resetCont {
   position: relative;
   width: 880px;
-  z-index: 20;
+//   z-index: 20;
 //   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +28,7 @@
 }
 .perspectiveHolder {
   position: relative;
-  z-index: 10;
+//   z-index: 1;
   perspective: 1000px;
   transform: perspective(1000px);
 }
@@ -40,6 +40,7 @@
   transition: all ease-out 350ms;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 .holder1,
 .holder2,
@@ -187,7 +188,7 @@
     position: relative;
 //   height: 115%;
   right: 10px;
-  top: -130px;
+  top: -60px;
   max-width: 95%;
   transition: all ease 0.3s;
 }

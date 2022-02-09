@@ -1,8 +1,28 @@
 import React, { useState } from "react";
 import style from "./Cards.module.css";
 import { Button, TextField } from "@mui/material";
+import Modal from "react-modal";
+import ModalElement from "./ModalElement";
+
 
 const Card4 = () => {
+    Modal.setAppElement(document.getElementById("root"));
+  let subtitle;
+  const [buttonStyle, setButtonStyle] = useState(style.letstalkfirst);
+
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+    window.document.body.style.overflow = "hidden";
+    window.document.body.querySelectorAll("#btn")[0].style.display = "none";
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    window.document.body.style.overflowY = "visible";
+    window.document.body.querySelectorAll("#btn")[0].style.display = "block";
+  };
   const [cardX, setCardX] = useState(10);
   const [cardY, setCardY] = useState(1);
   const [opacity, setOpacity] = useState(0.3);
@@ -44,7 +64,7 @@ const Card4 = () => {
       <div className={style.cardHodler}>
         <div className={style.perspectiveHolder}>
           <div
-            href="/"
+            onClick={openModal}
             className={style.case}
             style={{
               willChange: "transform",
@@ -60,26 +80,7 @@ const Card4 = () => {
                 <div className={style.logo2}>Job-Book</div>
                 <div className={style.aboutProject}>
                   Certification project at BIT. On this web app, you can track,
-                  create and delete candidates and interview reports. To get
-                  access you will need to{" "}
-                  <a
-                    href="https://www.dropbox.com/s/ikerwc6edzu5aa3/interviews-reports-api-mock.zip?dl=0"
-                    target="_blank"
-                    className={style.download}
-
-                  >
-                    download
-                  </a>{" "}
-                  and start the database (npm start). Login parameters: <br />
-                  username - dev@dev.com <br /> password - developer.
-                  <a
-                    href="https://job-book.vercel.app/"
-                    target="_blank"
-                    style={{textDecoration:"none"}}
-                  >
-                    <br />
-                    <Button variant="contained">Visit</Button>
-                  </a>
+                  create and delete candidates and interview reports. 
                 </div>
               </div>
               <div className={style.column2}>
@@ -109,6 +110,7 @@ const Card4 = () => {
               </div>
             </div>
           </div>
+          <ModalElement closeModal={closeModal} modalIsOpen={modalIsOpen}/>
         </div>
       </div>
     </div>
