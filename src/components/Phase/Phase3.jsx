@@ -7,16 +7,16 @@ import LightSaber from "./LightSaber/LightSaber";
 const Phase3 = ({ phase, setPhase, page, setPage }) => {
   return (
     <div>
-    <div className={!page ? style.phase2 : style.phase5}>
+    <div className={style.phase2}>
       
-      <div className={!page ? style.phase2contactive : style.phase2cont}>
+      <div className={style.phase2cont}>
         <h1>
           
           About me
         </h1>
         <LightSaber />
-        <Link to='/aboutme'>
-        <p>Frontend Developer</p></Link>
+        <Link to='/aboutme' className={page ? style.linkPage : style.link}>
+        <button className={style.showMore}>SHOW ME MORE</button></Link>
       </div>
       <div className={page ? style.imageDivPage : style.imageDiv}></div> 
     </div>

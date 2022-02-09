@@ -5,9 +5,9 @@ import style from "./Phase1.module.css";
 const Phase1 = ({phase, setPhase, page, setPage}) => {
   return (
     <div>
-    <div className={!page ? style.phase2 : style.phase5}>
+    <div className={style.phase2}>
       
-      <div className={!page ? style.phase2contactive : style.phase2cont}>
+      <div className={style.phase2cont}>
         <h1>
           
           Portfolio
@@ -16,7 +16,7 @@ const Phase1 = ({phase, setPhase, page, setPage}) => {
         
         <p>Frontend Developer</p>
       </div>
-      <div className={page ? style.imageDivPage : style.imageDiv}></div> 
+      <div className={style.imageDiv}></div> 
     </div>
     </div>
   );

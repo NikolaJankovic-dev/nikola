@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
-.phase2, .phase5 {
+.phase2 {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -14,58 +14,65 @@
           justify-content: center;
   gap: 70px;
   overflow: hidden;
+  top: 0vh;
 }
 
-.phase2 h1, .phase5 h1 {
+.phase2 h1 {
   font-size: 4.5em;
   font-family: 'Days One', sans-serif;
   font-weight: 400;
   margin: 0;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-}
-
-.phase2 {
-  top: 0vh;
-}
-
-.phase5 {
-  top: 0vh;
+  margin-bottom: 15px;
 }
 
 .phase2cont {
   position: absolute;
   top: 0vh;
-  padding-top: 40vh;
+  padding-top: 35vh;
   padding-left: 10vw;
   z-index: 1;
 }
 
-.phase2contactive {
-  position: absolute;
-  padding-top: 40vh;
-  padding-left: 10vw;
-  z-index: 1;
+.showMore {
+  padding: 20px 20px;
+  border-radius: 30px;
+  font-family: 'Days One', sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b36183), to(#479ca0));
+  background-image: linear-gradient(180deg, #b36183, #479ca0);
+  border: none;
+  color: white;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  cursor: pointer;
 }
 
-@-webkit-keyframes active {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0;
-  }
+.link, .linkPage {
+  margin-top: 30px;
+  display: inline-block;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  cursor: pointer;
 }
 
-@keyframes active {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0;
-  }
+.link {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective-origin: center;
+          perspective-origin: center;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.linkPage {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective-origin: center;
+          perspective-origin: center;
+  -webkit-transform: scale3d(0, 0, 1);
+          transform: scale3d(0, 0, 1);
 }
 
 .imageDiv {

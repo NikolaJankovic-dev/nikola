@@ -11,7 +11,7 @@
   justify-content: center;
   gap: 70px;
   overflow: hidden;
-
+top: 0vh;
   
 
   h1 {
@@ -28,16 +28,11 @@
     
   }
 }
-.phase2 {
-    top: 0vh;
-}
-.phase5 {
-    top: 0vh;
-}
+
 .phase2cont {
     position: absolute;
     top: 0vh;
-    padding-top: 40vh;
+    padding-top: 35vh;
     padding-left: 10vw;
 
     // right: 200%;
@@ -70,20 +65,8 @@
   background-size: contain;
   transition: all ease 1s;
 }
-.imageDivPage {
-  position: absolute;
-  top: 0vh;
-  right: 0vw;
-  width: 61vw;
-  height: 100vh;
-  background-image: url('https://img5.goodfon.com/wallpaper/nbig/2/87/star-wars-r2-d2-vectto-artist-robot-science-fiction-sci-fi-f.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all ease 1s;
 
-
-}
 p {
   color: aliceblue;
 }
+
