@@ -27,6 +27,11 @@ const Navbar = ({ page, setPhase, setFromPage }) => {
       navigate(-1);
     }, distance);
   };
+  useLayoutEffect(()=>{
+    if(!menuUp){
+      setColor(style.navbar)
+    }
+  })
 
   useLayoutEffect(() => {
     window.document.addEventListener("scroll", function () {
