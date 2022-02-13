@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap");
+.aboutWrap {
+  position: relative;
+  display: block;
+}
+
+.aboutCont {
+  position: relative;
+  padding-left: 138px;
+  margin-top: 144px;
+  overflow: hidden;
+}
+
+.headingNum {
+  position: absolute;
+  left: 0;
+  font-size: 40px;
+  padding-left: 62px;
+  padding-right: 32px;
+  font-family: "Oxanium";
+  color: #ff4d5a;
+  margin: 0;
+}
+
+.headingNum::before {
+  content: "";
+  width: 48px;
+  height: 2px;
+  background-color: #020b16;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.aboutTextWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 10%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  vertical-align: baseline;
+}
+
+.heading {
+  padding-top: 0;
+  font-size: 40px;
+  color: #072142;
+  font-family: "Oxanium";
+  margin: 0;
+}
+
+.aboutText {
+  width: 48.333%;
+}
+
+.aboutName {
+  color: #072142;
+  margin-bottom: 24px;
+  vertical-align: baseline;
+  font-family: "Oxanium";
+}
+
+.aboutName h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.aboutName p {
+  color: #072142;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.aboutme {
+  margin-bottom: 64px;
+  line-height: 2;
+  word-wrap: break-word;
+  white-space: normal;
+  color: #828c96;
+  font-family: "Oxanium";
+}
+
+.aboutPhoto {
+  display: block;
+  width: 100px;
+}
+
+.aboutPhoto img {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+/*# sourceMappingURL=AboutSection1.module.css.map */

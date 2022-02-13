@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap");
 
-
 .headingNum {
   position: absolute;
   left: 0;
@@ -8,7 +7,7 @@
   padding-left: 62px;
   padding-right: 32px;
   font-family: "Oxanium";
-//   line-height: 1.1;
+  //   line-height: 1.1;
   color: #ff4d5a;
   margin: 0;
 }
@@ -23,8 +22,7 @@
   left: 0;
   margin: auto;
 }
-
-.passionWrap, .skillWrap {
+.skillWrap {
   margin-top: 20px;
 }
 .passionHead {
@@ -43,7 +41,7 @@
   max-width: 1200px;
   width: 100%;
   margin: auto;
-  
+
   h2 {
     font-size: 40px;
     color: #1f2630;
@@ -52,51 +50,9 @@
     margin-right: 32px;
     padding-top: 12px;
     // line-height: 1.2;
-
   }
 }
-.passionCont {
- 
-  max-width: 1200px;
-  width: 100%;
-  margin: auto; 
-  margin-top: 144px;
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    font-family: "Oxanium";
 
-    li {
-      width: 29.75%;
-      line-height: 1.5;
-      div {
-        width: 50%;
-        margin: 0 auto 24px;
-        img {
-          width: 100%;
-        }
-      }
-  // 
-      h1 {
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        // width: 50%;
-        margin: 0 auto 24px;
-        text-align: center;
-      }
-      p {
-  color: #828c96;
-        
-        line-height: 2;
-        word-wrap: break-word;
-        white-space: normal;
-      }
-    }
-  }
-}
 .skillCont {
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +62,6 @@
   margin: auto;
   margin-top: 144px;
   font-family: "Oxanium";
-
 }
 .skillList {
   width: 47%;
@@ -139,7 +94,7 @@
 }
 .skillName {
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 .skillTitle {
   font-size: 28px;
@@ -158,13 +113,18 @@
   letter-spacing: 2px;
 }
 .skillProcent {
-  font-size:28px;
+  font-size: 28px;
   color: #072142;
   letter-spacing: 2px;
   margin: 0;
   // line-height: 1.2;
 }
-.skillBar, .skillBar90, .skillBar70, .skillBar60, .skillBar50 {
+.skillBar,
+.skillBar80,
+.skillBar90,
+.skillBar70,
+.skillBar60,
+.skillBar50 {
   width: 100%;
   height: 14px;
   background-color: #fff;
@@ -172,25 +132,34 @@
   border-radius: 10px;
   box-shadow: 0 5px 15px 0 #313b4985;
 }
-.skillBar::after, .skillBar90::after, .skillBar70::after, .skillBar60::after, .skillBar50::after {
+.skillBar::after,
+.skillBar80::after,
+.skillBar90::after,
+.skillBar70::after,
+.skillBar60::after,
+.skillBar50::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   border-radius: 10px;
- 
+  transition: all ease 3s;
+
   // background-image: linear-gradient(to right, #072141, #8c2b7a 50%, #ff4d5a );
-  
 }
 .skillBar::after {
-  width: 80%;
-  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a) ;
+  width: 10%;
+  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+}
+.skillBar80::after {
+    width: 80%;
+  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
 }
 
 .skillBar90::after {
   width: 90%;
-  background: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a) ;
+  background: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);
 }
 .skillBar70::after {
   width: 70%;
@@ -203,18 +172,4 @@
 .skillBar50::after {
   width: 50%;
   background: linear-gradient(to right, #072142, #8c2b7a 65%);
-}
-.footer {
-  margin-top: 144px;
-  background-image: linear-gradient(to right, #072142, #8c2b7a 72%, #ff4d5a);
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  a, a:visited {
-    text-decoration: none;
-    color: #fff;
-  font-family: "Oxanium";
-font-size: 32px;
-  }
 }

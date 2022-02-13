@@ -1,21 +1,38 @@
-import React, {useEffect, useLayoutEffect} from 'react';
-import Phase3 from '../Phase/Phase3';
-import style from './AboutMe.module.css'
-const AboutMe = ({phase, setPhase, page, setPage, fromPage, setFromPage}) => {
-    useLayoutEffect(() => {
-        setPage(true);
-        setFromPage(true);
-        setPhase(3);
-        if (phase === 1){
-        setPhase(3);
-        }
-      },[]);
-  return <div>
-      <Phase3 phase={phase} page={page}  fromPage={fromPage} setFromPage={setFromPage}/>
-      <div className={style.aboutCont}>
-          <h1>About Me</h1>
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import Phase3 from "../Phase/Phase3";
+import style from "./AboutMe.module.css";
+import AboutSection3 from "./AboutSection3";
+import AboutSection1 from "./AboutSection1";
+import AboutSection2 from "./AboutSection2";
+const AboutMe = ({ phase, setPhase, page, setPage, fromPage, setFromPage }) => {
+  
+  useLayoutEffect(() => {
+    setPage(true);
+    setFromPage(true);
+    setPhase(3);
+    if (phase === 1) {
+      setPhase(3);
+    }
+  }, []);
+  return (
+    <div>
+      <Phase3
+        phase={phase}
+        page={page}
+        fromPage={fromPage}
+        setFromPage={setFromPage}
+      />
+      <div className={style.aboutWrap}>
+        <AboutSection1/>
+        <AboutSection2/>
+        <AboutSection3/>
+      
+        <div className={style.footer}>
+          <a href="mailto:dzoni6usb@gmail.com">dzoni6usb@gmail.com</a>
+        </div>
       </div>
-  </div>;
+    </div>
+  );
 };
 
 export default AboutMe;

@@ -1,0 +1,96 @@
+.headingNum {
+    position: absolute;
+    left: 0;
+    font-size: 40px;
+    padding-left: 62px;
+    padding-right: 32px;
+    font-family: "Oxanium";
+  //   line-height: 1.1;
+    color: #ff4d5a;
+    margin: 0;
+  }
+  .headingNum::before {
+    content: "";
+    width: 48px;
+    height: 2px;
+    background-color: #020b16;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  
+  .passionWrap, .skillWrap {
+    margin-top: 20px;
+  }
+  .passionHead {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 138px;
+    margin-top: 144px;
+  }
+  .passionHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10%;
+    box-sizing: content-box;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    
+    h2 {
+      font-size: 40px;
+      color: #1f2630;
+      letter-spacing: 2px;
+      font-family: "Oxanium";
+      margin-right: 32px;
+      padding-top: 12px;
+      // line-height: 1.2;
+  
+    }
+  }
+  .passionCont {
+   
+    max-width: 1200px;
+    width: 100%;
+    margin: auto; 
+    margin-top: 144px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+      font-family: "Oxanium";
+  
+      li {
+        width: 29.75%;
+        line-height: 1.5;
+        div {
+          width: 50%;
+          margin: 0 auto 24px;
+          img {
+            width: 100%;
+          }
+        }
+    // 
+        h1 {
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          // width: 50%;
+          margin: 0 auto 24px;
+          text-align: center;
+        }
+        p {
+    color: #828c96;
+          
+          line-height: 2;
+          word-wrap: break-word;
+          white-space: normal;
+        }
+      }
+    }
+  }

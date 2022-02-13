@@ -22,7 +22,7 @@
   margin: auto;
 }
 
-.passionWrap, .skillWrap {
+.skillWrap {
   margin-top: 20px;
 }
 
@@ -63,55 +63,6 @@
   font-family: "Oxanium";
   margin-right: 32px;
   padding-top: 12px;
-}
-
-.passionCont {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  margin-top: 144px;
-}
-
-.passionCont ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-  font-family: "Oxanium";
-}
-
-.passionCont ul li {
-  width: 29.75%;
-  line-height: 1.5;
-}
-
-.passionCont ul li div {
-  width: 50%;
-  margin: 0 auto 24px;
-}
-
-.passionCont ul li div img {
-  width: 100%;
-}
-
-.passionCont ul li h1 {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 auto 24px;
-  text-align: center;
-}
-
-.passionCont ul li p {
-  color: #828c96;
-  line-height: 2;
-  word-wrap: break-word;
-  white-space: normal;
 }
 
 .skillCont {
@@ -206,7 +157,12 @@
   margin: 0;
 }
 
-.skillBar, .skillBar90, .skillBar70, .skillBar60, .skillBar50 {
+.skillBar,
+.skillBar80,
+.skillBar90,
+.skillBar70,
+.skillBar60,
+.skillBar50 {
   width: 100%;
   height: 14px;
   background-color: #fff;
@@ -216,16 +172,29 @@
           box-shadow: 0 5px 15px 0 #313b4985;
 }
 
-.skillBar::after, .skillBar90::after, .skillBar70::after, .skillBar60::after, .skillBar50::after {
+.skillBar::after,
+.skillBar80::after,
+.skillBar90::after,
+.skillBar70::after,
+.skillBar60::after,
+.skillBar50::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   border-radius: 10px;
+  -webkit-transition: all ease 3s;
+  transition: all ease 3s;
 }
 
 .skillBar::after {
+  width: 10%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#ff4d5a));
+  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+}
+
+.skillBar80::after {
   width: 80%;
   background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#ff4d5a));
   background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
@@ -254,27 +223,4 @@
   background: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(65%, #8c2b7a));
   background: linear-gradient(to right, #072142, #8c2b7a 65%);
 }
-
-.footer {
-  margin-top: 144px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(72%, #8c2b7a), to(#ff4d5a));
-  background-image: linear-gradient(to right, #072142, #8c2b7a 72%, #ff4d5a);
-  height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footer a, .footer a:visited {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Oxanium";
-  font-size: 32px;
-}
-/*# sourceMappingURL=AboutMe.module.css.map */
+/*# sourceMappingURL=AboutSection3.module.css.map */
