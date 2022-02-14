@@ -9,6 +9,8 @@
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@mui/icons-material": "^5.3.1",
     "@mui/material": "^5.4.0",
+    "@react-three/drei": "^8.9.0",
+    "@react-three/fiber": "^7.0.26",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -20,6 +22,7 @@
     "react-scripts": "5.0.0",
     "react-spring": "^9.4.2",
     "react-useanimations": "^2.0.8",
+    "three": "^0.137.5",
     "use-3d-effect": "^1.1.0",
     "web-vitals": "^2.1.4"
   },
