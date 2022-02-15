@@ -14,14 +14,11 @@ const AboutSection1 = () => {
               <p>JANKOVIC</p>
             </div>
             <div className={style.aboutme}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              totam aliquam et, porro eligendi quos autem doloribus repellendus
-              delectus, voluptatibus asperiores facilis illo itaque architecto
-              ipsa. Debitis ipsam nesciunt quo?
+            Born in Belgrade in 1993. My career started in 2013. when I got a job as a salesman in the largest IT company in Serbia.  During the pandemic, I started learning about programming and soon fell in love with it. I wanted to learn more, so I decided to take a part in a coding bootcamp course. I finished it with an advanced diploma.
             </div>
             <div className={style.aboutPhoto} style={{ width: "100%" }}>
               <img
-                src="https://scontent.fbeg2-1.fna.fbcdn.net/v/t1.18169-9/10422089_750165585071959_3676698997905328907_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=4HFYTBlYldIAX9ZKsOQ&_nc_ht=scontent.fbeg2-1.fna&oh=00_AT_BgmSKSuNxB9UiLCCizUa_oyTb-rqhb1SgqDNvfZQYlw&oe=622D3E8F"
+                src="https://i.imgur.com/3XuYohN.jpg"
                 alt="KUON YAGI"
               />
             </div>
