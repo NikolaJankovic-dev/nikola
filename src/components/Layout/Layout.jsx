@@ -17,7 +17,7 @@ const Layout = ({ page, phase }) => {
   return (
     <div className={style.layout}>
       <div
-        // className={!page ? style.lights : style.lightsPage}
+        className={!page ? style.lights : style.lightsPage}
         style={{
           height: "100vh",
           width: "100vw",
