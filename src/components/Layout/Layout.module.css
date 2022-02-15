@@ -24,8 +24,8 @@
 
 .starscontPage, .lightsPage {
   opacity: 0;
-  -webkit-transition: all ease 1ms;
-  transition: all ease 1ms;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
 }
 
 .deathstarcont {
