@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
-.phase2, .phase5 {
+.phase2,
+.phase5 {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -17,9 +18,10 @@
   top: 0vh;
 }
 
-.phase2 h1, .phase5 h1 {
+.phase2 h1,
+.phase5 h1 {
   font-size: 4.5em;
-  font-family: 'Days One', sans-serif;
+  font-family: "Days One", sans-serif;
   font-weight: 400;
   margin: 0;
   -webkit-margin-before: 0;
@@ -33,6 +35,7 @@
   top: 0vh;
   padding-top: 35vh;
   padding-left: 10vw;
+  z-index: 10;
 }
 
 .phase2contactive {
@@ -73,7 +76,39 @@
   transition: all ease 1s;
 }
 
-p {
-  color: aliceblue;
+@media screen and (max-width: 950px) {
+  .phase2cont {
+    padding-top: 70vh;
+  }
+  .phase2cont h1 {
+    font-size: 32px;
+    position: relative;
+  }
+  .phase2cont h1::after {
+    content: "";
+    position: absolute;
+    background-color: #cf5f5f;
+    height: 3px;
+    width: 40%;
+    left: 20%;
+    bottom: -40%;
+  }
+  .phase2cont h1::before {
+    content: "";
+    position: absolute;
+    background-color: #cf5f5f;
+    height: 3px;
+    width: 40%;
+    left: 0%;
+    bottom: -10%;
+  }
+  .phase2cont div {
+    display: none;
+  }
+  .imageDiv {
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=Phase1.module.css.map */

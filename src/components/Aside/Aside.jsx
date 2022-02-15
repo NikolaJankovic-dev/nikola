@@ -14,7 +14,7 @@ const Aside = ({page, phase, setPhase, setFromPage}) => {
       navigate(-1)
     },1000)      
   }
-  return <div className={style.aside}>
+  return <div>
       <aside className={!page ? style.aside : style.asidePage}>
       {/* <span onClick={scrollUp} className={!page ? style.back : style.backPage}></span> */}
         <span

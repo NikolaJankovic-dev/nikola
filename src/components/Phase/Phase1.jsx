@@ -15,7 +15,7 @@ function DeathStar({ ...props }) {
         geometry={nodes.DeathStar.geometry}
         material={materials.DeathStar}
         position={[0, 0, 0]}
-        scale={2.5}
+        scale={1.8}
       />
       <OrbitControls
         enableZoom={false}
