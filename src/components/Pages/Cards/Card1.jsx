@@ -57,12 +57,12 @@ const Card1 = () => {
         >
           <div className={style.holder1}>
             <div className={style.column1}>
-              <div><img  className={style.logo1} src="https://i.imgur.com/2QhJiKO.png"/> </div>
+              <img  className={style.logo1} src="https://i.imgur.com/2QhJiKO.png"/> 
               <div className={style.aboutProject}>
               Reset is a voting platform. Users choose the biggest hit of 2021 in several categories. Reset was very popular on social media on December 2021 and January 2022.
               </div>
             </div>
-            <div className={style.column2}>
+            <div className={style.column2reset}>
               <div
                 className={style.imageCase}
                 style={{
