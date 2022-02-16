@@ -18,8 +18,8 @@ const AboutSection1 = () => {
             </div>
             <div className={style.aboutPhoto} style={{ width: "100%" }}>
               <img
-                src="https://i.imgur.com/3XuYohN.jpg"
-                alt="KUON YAGI"
+                src="https://i.imgur.com/GT1rUg9.jpg"
+                
               />
             </div>
           </div>
