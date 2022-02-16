@@ -22,7 +22,7 @@ const AboutSection1 = () => {
               diploma.
             </div>
             <div className={style.aboutPhoto} style={{ width: "100%" }}>
-              <img src="https://i.imgur.com/3XuYohN.jpg" alt="KUON YAGI" />
+              <img src="https://i.imgur.com/GT1rUg9.jpg" alt="KUON YAGI" />
             </div>
           </div>
         </div>
