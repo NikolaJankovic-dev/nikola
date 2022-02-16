@@ -223,4 +223,47 @@
   background: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(65%, #8c2b7a));
   background: linear-gradient(to right, #072142, #8c2b7a 65%);
 }
+
+@media screen and (max-width: 950px) {
+  .headingNum {
+    font-size: 26px;
+    padding-left: 32px;
+  }
+  .headingNum::before {
+    width: 24px;
+  }
+  .passionHeading h2 {
+    font-size: 26px;
+    padding-left: 78px;
+    padding-top: 0;
+  }
+  .passionHead {
+    padding-left: 0;
+  }
+  .skillCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+  }
+  .skillList {
+    width: 90%;
+  }
+  .skillTitle {
+    font-size: 16px;
+    color: #072142;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  .skillTime {
+    font-size: 10px;
+  }
+  .skillProcent {
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=AboutSection3.module.css.map */

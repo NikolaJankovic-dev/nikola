@@ -22,98 +22,6 @@
   margin: auto;
 }
 
-.passionWrap, .skillWrap {
-  margin-top: 20px;
-}
-
-.passionHead {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 138px;
-  margin-top: 144px;
-}
-
-.passionHeading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 10%;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-}
-
-.passionHeading h2 {
-  font-size: 40px;
-  color: #1f2630;
-  letter-spacing: 2px;
-  font-family: "Oxanium";
-  margin-right: 32px;
-  padding-top: 12px;
-}
-
-.passionCont {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  margin-top: 144px;
-}
-
-.passionCont ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-  font-family: "Oxanium";
-}
-
-.passionCont ul li {
-  width: 29.75%;
-  line-height: 1.5;
-}
-
-.passionCont ul li div {
-  width: 50%;
-  margin: 0 auto 24px;
-}
-
-.passionCont ul li div img {
-  width: 100%;
-}
-
-.passionCont ul li h1 {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 auto 24px;
-  text-align: center;
-}
-
-.passionCont ul li p {
-  color: #828c96;
-  line-height: 2;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
 .skillCont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,6 +183,6 @@
   text-decoration: none;
   color: #fff;
   font-family: "Oxanium";
-  font-size: 32px;
+  font-size: 26px;
 }
 /*# sourceMappingURL=AboutMe.module.css.map */
