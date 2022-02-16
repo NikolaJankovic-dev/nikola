@@ -1,6 +1,5 @@
 import React, { useState, useLayoutEffect, useCallback } from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import { browserHistory } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import style from "./App.module.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -19,8 +18,6 @@ function App() {
     if (phase === 1 && phase !== 2 && phase !== 3) {
       if (e.deltaY > 0) {
         setPhase(2);
-        // setFromPage(false);
-
       }
     }
     if (phase === 2) {
@@ -81,8 +78,13 @@ function App() {
   return (
     <div className={!page ? style.app : style.appPage}>
       <BrowserRouter>
-        <Navbar page={page} setPhase={setPhase} setFromPage={setFromPage}/>
-        <Aside page={page} phase={phase} setPhase={setPhase} setFromPage={setFromPage}/>
+        <Navbar page={page} setPhase={setPhase} setFromPage={setFromPage} />
+        <Aside
+          page={page}
+          phase={phase}
+          setPhase={setPhase}
+          setFromPage={setFromPage}
+        />
         <Layout page={page} phase={phase} />
         <Routes>
           <Route
@@ -100,7 +102,6 @@ function App() {
           />
           <Route
             path="/projects"
-           
             element={
               <Projects
                 phase={phase}
@@ -114,7 +115,6 @@ function App() {
           />
           <Route
             path="/aboutme"
-            
             element={
               <AboutMe
                 phase={phase}

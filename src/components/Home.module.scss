@@ -1,40 +1,35 @@
 .home {
-    // background: linear-gradient(0deg, rgb(6, 22, 32) 0%, rgb(11, 43, 73) 100%);
-    position: relative;
-    height: 100vh;
-    
+  position: relative;
+  height: 100vh;
 }
 
 .one {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    // transform: translate3d(0px, -00vh, 0px);
-    transition: all ease 1s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: all ease 1s;
 }
-.two, .twoFromPage {
-    position: fixed;
-    width: 100%;
-    top: -100vh;
-    // 
-
-    // transform: translate3d(0px, -90vh, 0px);
+.two,
+.twoFromPage {
+  position: fixed;
+  width: 100%;
+  top: -100vh;
 }
 .two {
-    transition: all ease 1s;
+  transition: all ease 1s;
 }
-.three, .threeFromPage {
-    position: fixed;
-    width: 100%;
-    top: -200vh;
-    
+.three,
+.threeFromPage {
+  position: fixed;
+  width: 100%;
+  top: -200vh;
 }
 .three {
-    transition: all ease 1s;
+  transition: all ease 1s;
 }
 .four {
-    position: fixed;
-    width: 100%;
-    top: -300vh;
-    transition: all ease 1s;
+  position: fixed;
+  width: 100%;
+  top: -300vh;
+  transition: all ease 1s;
 }

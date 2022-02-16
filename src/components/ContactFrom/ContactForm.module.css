@@ -11,19 +11,24 @@
   margin: 20px auto;
 }
 
-.formCont h4, .formCont p {
-  color: #F0F8FF;
+.formCont h4,
+.formCont p {
+  color: #f0f8ff;
 }
 
 .formCont div {
   margin-bottom: 0.7vh;
 }
 
-.inputs div:before, .inputs div:hover, .inputs:hover div:before, .inputs:hover div:hover {
-  border-color: #F0F8FF;
+.inputs div:before,
+.inputs div:hover,
+.inputs:hover div:before,
+.inputs:hover div:hover {
+  border-color: #f0f8ff;
 }
 
-.inputs div:before:hover, .inputs:hover div:before:hover {
+.inputs div:before:hover,
+.inputs:hover div:before:hover {
   border-color: aqua;
 }
 
@@ -36,8 +41,9 @@
     width: 90%;
     margin: 10px;
   }
-  .formCont h4, .formCont p {
-    color: #F0F8FF;
+  .formCont h4,
+  .formCont p {
+    color: #f0f8ff;
   }
   .formCont div {
     margin-bottom: 0;

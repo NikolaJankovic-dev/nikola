@@ -1,20 +1,24 @@
 import { Button, TextField } from "@mui/material";
-import { makeStyles } from "@material-ui/core/styles";
 import React, { useState } from "react";
+import Modal from "react-modal";
 import style from "./ContactForm.module.css";
+import ModalMail from "./ModalMail";
 
 const ContactForm = () => {
-    const inputProps = {
-        color: "white"
-    }
-    const stylesFn = () => ({
-        input: {
-          color: "blue"
-        },
-        focused: {
-          background: "red"
-        }
-      });
+  Modal.setAppElement(document.getElementById("root"));
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+    window.document.body.style.overflow = "hidden";
+    window.document.body.querySelectorAll("#btn")[0].style.display = "none";
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    window.document.body.style.overflowY = "visible";
+    window.document.body.querySelectorAll("#btn")[0].style.display = "block";
+  };
 
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
@@ -33,21 +37,22 @@ const ContactForm = () => {
       },
       body: JSON.stringify(details),
     });
-    setStatus("Submit");
     let result = await response.json();
-    alert(result.status);
+    setStatus(result.status);
+    openModal();
   };
-  const label = style.label
+  const label = style.label;
   return (
     <div>
-      <form className={style.form} onSubmit={handleSubmit} >
+      <form className={style.form} onSubmit={handleSubmit}>
         <div className={style.formCont}>
-        <h4>LET'S TALK!</h4>
-      <p>I will get back to you within one to two days through email. Also please don't forget to check your spam account just in case!</p>
+          <h4>LET'S TALK!</h4>
+          <p>
+            I will get back to you within one to two days through email. Also
+            please don't forget to check your spam account just in case!
+          </p>
           <div>
             {" "}
-           
-      
             <TextField
               label="Name"
               name="name"
@@ -55,9 +60,13 @@ const ContactForm = () => {
               id="name"
               variant="standard"
               className={style.inputs}
-              sx={{ width: "100%", input: {color: "#F0F8FF"}, label:{color: "#F0F8FF"},":hover":{label:{color:"white"}}, ":focus-within":{label:{color:"white"}}}}
-              
-
+              sx={{
+                width: "100%",
+                input: { color: "#F0F8FF" },
+                label: { color: "#F0F8FF" },
+                ":hover": { label: { color: "white" } },
+                ":focus-within": { label: { color: "white" } },
+              }}
             />
           </div>
           <div>
@@ -68,9 +77,13 @@ const ContactForm = () => {
               id="name"
               variant="standard"
               className={style.inputs}
-              sx={{ width: "100%", input: {color: "#F0F8FF"}, label:{color: "#F0F8FF"},":hover":{label:{color:"white"}}, ":focus-within":{label:{color:"white"}}}}
-              
-
+              sx={{
+                width: "100%",
+                input: { color: "#F0F8FF" },
+                label: { color: "#F0F8FF" },
+                ":hover": { label: { color: "white" } },
+                ":focus-within": { label: { color: "white" } },
+              }}
             />
           </div>
           <div>
@@ -82,21 +95,25 @@ const ContactForm = () => {
               variant="standard"
               minRows={2}
               maxRows={4}
-            //   InputLabelProps={{style={color:"white"}}}
-            className={style.inputs}
-            
-         
-              // my={4}
-              sx={{ width: "100%", input: {color: "#F0F8FF"}, label:{color: "#F0F8FF"},":hover":{label:{color:"white"}}, ":focus-within":{label:{color:"white"}}}}
-              
-             
-              
+              className={style.inputs}
+              sx={{
+                width: "100%",
+                input: { color: "#F0F8FF" },
+                label: { color: "#F0F8FF" },
+                ":hover": { label: { color: "white" } },
+                ":focus-within": { label: { color: "white" } },
+              }}
             />
             <div>
               <Button type="submit" variant="contained" className={style.send}>
                 SEND REQUEST
               </Button>
             </div>
+            <ModalMail
+              closeModal={closeModal}
+              modalIsOpen={modalIsOpen}
+              message={status}
+            />
           </div>
         </div>
       </form>

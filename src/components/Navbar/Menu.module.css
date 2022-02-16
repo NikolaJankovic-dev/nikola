@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
-.menu, .menuUp {
+.menu,
+.menuUp {
   position: fixed;
   background-color: black;
   background-image: url("https://wallpapersmug.com/large/d229f8/baby-yoda-2021.jpeg");
@@ -47,7 +48,7 @@
 .menuCont * {
   text-decoration: none;
   color: aliceblue;
-  font-family: 'Days One', sans-serif;
+  font-family: "Days One", sans-serif;
 }
 
 .menuCont *:hover {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
 import style from "./Layout.module.css";
 
-const Layout = ({ page, phase }) => {
+const Layout = ({ page }) => {
   const [posX, setPosX] = useState(0);
   const [posY, setPosY] = useState(0);
   useLayoutEffect(() => {
@@ -31,8 +31,6 @@ const Layout = ({ page, phase }) => {
           backgroundSize: "contain",
           backgroundPosition: "center",
           zIndex: "1",
-
-          // opacity:0.1
         }}
       >
         <div
@@ -41,20 +39,6 @@ const Layout = ({ page, phase }) => {
             transform: `translateX(${posX / 10}%) translateY(${posY / 10}%)`,
           }}
         ></div>
-        {/* <div className={!page ? style.deathstarcont : style.deathstarcont}>
-          <div
-            className={
-              (!page && phase === 1) || phase === 0
-                ? style.deathstar
-                : style.deathstarpassive
-            }
-            style={{
-              transform: `translateX(${-50 + posX / 10}%) translateY(${
-                -50 + posY / 10
-              }%)`,
-            }}
-          ></div> */}
-        {/* </div> */}
       </div>
     </div>
   );

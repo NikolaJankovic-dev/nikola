@@ -9,7 +9,6 @@ import github from "react-useanimations/lib/github";
 import linkedin from "react-useanimations/lib/linkedin";
 import archive from "react-useanimations/lib/archive";
 
-
 import Menu from "./Menu";
 
 const Navbar = ({ page, setPhase, setFromPage }) => {
@@ -27,11 +26,11 @@ const Navbar = ({ page, setPhase, setFromPage }) => {
       navigate(-1);
     }, distance);
   };
-  useLayoutEffect(()=>{
-    if(!menuUp){
-      setColor(style.navbar)
+  useLayoutEffect(() => {
+    if (!menuUp) {
+      setColor(style.navbar);
     }
-  })
+  });
 
   useLayoutEffect(() => {
     window.document.addEventListener("scroll", function () {
@@ -46,40 +45,36 @@ const Navbar = ({ page, setPhase, setFromPage }) => {
     <div>
       <div className={color}>
         <h1 className={style.titleNav}>Nikola </h1>
-        {/* <div className={style.menu}></div> */}
         <div className={style.menu}>
           <div className={style.icons}>
-        <a
-            href="mailto:dzoni6usb@gmail.com"
-            target="_blank"
-          >
-            <UseAnimations
-              animation={archive}
-              strokeColor={color === style.navbar ? "white" : "black"}
-              fillColor="white"
-              size={48}
-              // marginHeight={10}
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nikola-jankovic-bbb7a9220/"
-            target="_blank"
-          >
-            <UseAnimations
-              animation={linkedin}
-              strokeColor={color === style.navbar ? "white" : "black"}
-              fillColor="white"
-              size={56}
-            />
-          </a>
-          <a href="https://github.com/NikolaJankovic-dev" target="_blank">
-            <UseAnimations
-              animation={github}
-              strokeColor={color === style.navbar ? "white" : "black"}
-              fillColor="white"
-              size={56}
-            />
-          </a></div>
+            <a href="mailto:dzoni6usb@gmail.com" target="_blank">
+              <UseAnimations
+                animation={archive}
+                strokeColor={color === style.navbar ? "white" : "black"}
+                fillColor="white"
+                size={48}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nikola-jankovic-bbb7a9220/"
+              target="_blank"
+            >
+              <UseAnimations
+                animation={linkedin}
+                strokeColor={color === style.navbar ? "white" : "black"}
+                fillColor="white"
+                size={56}
+              />
+            </a>
+            <a href="https://github.com/NikolaJankovic-dev" target="_blank">
+              <UseAnimations
+                animation={github}
+                strokeColor={color === style.navbar ? "white" : "black"}
+                fillColor="white"
+                size={56}
+              />
+            </a>
+          </div>
           <div
             onClick={() => setMenuUp(!menuUp)}
             className={!menuUp ? style.menuActive : style.menuPassive}
@@ -106,14 +101,6 @@ const Navbar = ({ page, setPhase, setFromPage }) => {
               }
             ></span>
           </div>
-          {/* <UseAnimations
-            onClick={() => setMenuUp(!menuUp)}
-            strokeColor={color === style.navbar ? "white" : "black"}
-            animation={menu}
-            size={56}
-            options={setMenuUp}
-            style={{ padding: 100, color: "#fff" }}
-          />{" "} */}
         </div>
 
         <BsArrowLeft

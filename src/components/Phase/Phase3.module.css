@@ -19,7 +19,7 @@
 
 .phase2 h1 {
   font-size: 4.5em;
-  font-family: 'Days One', sans-serif;
+  font-family: "Days One", sans-serif;
   font-weight: 400;
   margin: 0;
   margin-bottom: 15px;
@@ -36,7 +36,7 @@
 .showMore {
   padding: 20px 20px;
   border-radius: 30px;
-  font-family: 'Days One', sans-serif;
+  font-family: "Days One", sans-serif;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b36183), to(#479ca0));
   background-image: linear-gradient(180deg, #b36183, #479ca0);
   border: none;
@@ -48,7 +48,8 @@
   cursor: pointer;
 }
 
-.link, .linkPage {
+.link,
+.linkPage {
   margin-top: 30px;
   display: inline-block;
   -webkit-transition: all ease 1s;
@@ -117,7 +118,7 @@ p {
   .phase2cont h1 {
     font-size: 32px;
     position: relative;
-    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
   }
   .phase2cont div {
     display: none;

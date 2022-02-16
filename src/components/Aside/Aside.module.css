@@ -50,7 +50,8 @@
 }
 
 @media screen and (max-width: 950px) {
-  .aside, .asidePage {
+  .aside,
+  .asidePage {
     top: 95vh;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -68,22 +69,20 @@
     height: 5vh;
     vertical-align: bottom;
   }
-  .aside .spanactive, .asidePage .spanactive {
-    background-color: aliceblue;
+  .aside .spanactive,
+  .asidePage .spanactive {
     bottom: 0;
     width: 3px;
     height: 100%;
-    cursor: pointer;
     -webkit-transition: all ease 500ms;
     transition: all ease 500ms;
   }
-  .aside .spanpassive, .asidePage .spanpassive {
+  .aside .spanpassive,
+  .asidePage .spanpassive {
     position: relative;
     bottom: 0;
-    background-color: aliceblue;
     width: 3px;
     height: 60%;
-    cursor: pointer;
     -webkit-transition: all ease 500ms;
     transition: all ease 500ms;
   }

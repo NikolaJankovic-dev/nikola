@@ -1,6 +1,5 @@
 .modal {
   position: fixed;
-  width: 460px;
   background-color: #fefefe;
   top: 50%;
   left: 50%;
@@ -15,41 +14,6 @@
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 10px;
   z-index: 310;
-}
-
-.modalText {
-  margin: 40px 40px;
-}
-
-.buttons {
-  margin: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.buttons a,
-.buttons a:visited {
-  text-decoration: none;
-}
-
-.downloadbtn {
-  background-color: #46ac46;
-}
-
-.downloadbtn:hover {
-  background-color: #029602;
-}
-
-.cancel {
-  background-color: #ff4343;
-}
-
-.cancel:hover {
-  background-color: #ca3737;
 }
 
 .overlay {
@@ -81,4 +45,8 @@
 .closebtn:hover {
   color: #999999;
 }
-/*# sourceMappingURL=ModalElement.module.css.map */
+
+.message {
+  padding: 70px;
+}
+/*# sourceMappingURL=ModalMail.module.css.map */

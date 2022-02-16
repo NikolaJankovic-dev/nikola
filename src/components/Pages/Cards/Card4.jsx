@@ -4,9 +4,8 @@ import { Button, TextField } from "@mui/material";
 import Modal from "react-modal";
 import ModalElement from "./ModalElement";
 
-
 const Card4 = () => {
-    Modal.setAppElement(document.getElementById("root"));
+  Modal.setAppElement(document.getElementById("root"));
   let subtitle;
   const [buttonStyle, setButtonStyle] = useState(style.letstalkfirst);
 
@@ -15,13 +14,11 @@ const Card4 = () => {
   const openModal = () => {
     setIsOpen(true);
     window.document.body.style.overflow = "hidden";
-    window.document.body.querySelectorAll("#btn")[0].style.display = "none";
   };
 
   const closeModal = () => {
     setIsOpen(false);
     window.document.body.style.overflowY = "visible";
-    window.document.body.querySelectorAll("#btn")[0].style.display = "block";
   };
   const [cardX, setCardX] = useState(10);
   const [cardY, setCardY] = useState(1);
@@ -68,9 +65,7 @@ const Card4 = () => {
             className={style.case}
             style={{
               willChange: "transform",
-              transform: `rotateY(${
-                -cardX / 90
-              }deg)`,
+              transform: `rotateY(${-cardX / 90}deg)`,
               transformStyle: "preserve-3d",
               opacity: "1",
             }}
@@ -80,7 +75,7 @@ const Card4 = () => {
                 <div className={style.logo2}>Job-Book</div>
                 <div className={style.aboutProject}>
                   Certification project at BIT. On this web app, you can track,
-                  create and delete candidates and interview reports. 
+                  create and delete candidates and interview reports.
                 </div>
               </div>
               <div className={style.column2}>
@@ -110,7 +105,7 @@ const Card4 = () => {
               </div>
             </div>
           </div>
-          <ModalElement closeModal={closeModal} modalIsOpen={modalIsOpen}/>
+          <ModalElement closeModal={closeModal} modalIsOpen={modalIsOpen} />
         </div>
       </div>
     </div>

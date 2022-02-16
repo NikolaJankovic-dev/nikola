@@ -1,65 +1,65 @@
 .modal {
-    position: fixed;
-    // height: 42vh;
-    width: 460px;
-    background-color: rgb(254, 254, 254);
-    top: 50%;
-    left: 50%;
-    right: auto;
-    bottom: auto;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    border-radius: 10px;
-    z-index: 310;
-  }
-  .modalText {
-      margin: 40px 40px;
-  }
-  .buttons {
-      margin: 40px;
-      display: flex;
-      justify-content: space-between;
-      a, a:visited {
-          text-decoration: none;
-      }
-  }
-  .downloadbtn{
-      background-color: rgb(70, 172, 70);
-  }
-  .downloadbtn:hover {
-    background-color: rgb(2, 150, 2);
-  }
-  .cancel {
-      background-color: rgb(255, 67, 67);
-  }
-  .cancel:hover {
-    background-color: rgb(202, 55, 55);
+  position: fixed;
+  width: 460px;
+  background-color: rgb(254, 254, 254);
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  z-index: 310;
 }
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.795);
-    backdrop-filter: blur(1px);
-    opacity: 1;
-    transition: all 2000ms ease-in-out;
-    overflow: hidden;
-    z-index: 1;
+.modalText {
+  margin: 40px 40px;
+}
+.buttons {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  a,
+  a:visited {
+    text-decoration: none;
   }
-  .closebtn {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-    background-color: transparent;
-    outline: none;
-    border: none;
-  }
-  .closebtn:hover {
-    color: rgb(153, 153, 153);
-  }
+}
+.downloadbtn {
+  background-color: rgb(70, 172, 70);
+}
+.downloadbtn:hover {
+  background-color: rgb(2, 150, 2);
+}
+.cancel {
+  background-color: rgb(255, 67, 67);
+}
+.cancel:hover {
+  background-color: rgb(202, 55, 55);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.795);
+  backdrop-filter: blur(1px);
+  opacity: 1;
+  transition: all 2000ms ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+}
+.closebtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.closebtn:hover {
+  color: rgb(153, 153, 153);
+}
