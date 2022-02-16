@@ -31,7 +31,6 @@ const LightSaber = () => {
   <span className={lightColor}></span>
   <span className={style.generator}>
       <span className={style.guard}>
-          {/* {console.log(numclick)} */}
           <span></span>
           <span></span>
           <span></span>
@@ -62,8 +61,6 @@ const LightSaber = () => {
           <span className={style.wing2}></span>
           <span className={style.wing3}></span>
       </span>
-
-      {/* <span className={style.light}></span> */}
   </span>
 </div>
 };

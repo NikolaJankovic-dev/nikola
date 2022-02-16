@@ -301,33 +301,5 @@
   .tv {
     top: 0;
   }
-  .holder1,
-  .holder2,
-  .holder3, .holder4 {
-    position: relative;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    min-height: 480px;
-    margin-bottom: 120px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-columns: #fff;
-            columns: #fff;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-line-pack: stretch;
-        align-content: stretch;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-  }
 }
 /*# sourceMappingURL=Cards.module.css.map */

@@ -15,8 +15,6 @@ const Projects = ({
   fromPage,
   setFromPage,
 }) => {
-  
-
   useLayoutEffect(() => {
     setPage(true);
     setFromPage(true);
@@ -25,9 +23,6 @@ const Projects = ({
       setPhase(2);
     }
   }, []);
-
-
- 
 
   return (
     <div id="top">
@@ -41,7 +36,7 @@ const Projects = ({
         <Card1 />
         <Card2 />
         <Card3 />
-        <Card4/>
+        <Card4 />
       </div>
     </div>
   );

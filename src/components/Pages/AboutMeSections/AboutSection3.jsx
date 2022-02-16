@@ -31,7 +31,6 @@ const AboutSection3 = () => {
           </div>
         </div>
         <div className={style.skillCont} >
-          {/* {console.log(inViewport)} */}
           <ul className={style.skillList}   ref={containerRef}>
             <li className={style.skillItem}>
               <div className={style.skillIcon}>

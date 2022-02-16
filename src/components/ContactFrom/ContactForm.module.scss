@@ -1,60 +1,45 @@
-// .inputs {
-//     // background-color: aliceblue;
-//     border-bottom: 1px white solid;
-//     label {
-//         color: white;
-//     }
-//     div:before {
-//         color: rgb(209, 43, 43);
-//     }
-// }
 .form {
-    background: rgba(5, 32, 58, 0.404);
-// box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba(61, 61, 61, 0.075);
-// padding: 40px;
-// div {
-//     margin: 20px auto;
-//     width: 90%;
-// }
+  background: rgba(5, 32, 58, 0.404);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(61, 61, 61, 0.075);
 }
 .formCont {
-    width: 60%;
-    margin: 20px auto;
-    h4, p {
-        color: #F0F8FF;
-    }
-    div {
-        margin-bottom: 0.7vh;
-    }
+  width: 60%;
+  margin: 20px auto;
+  h4,
+  p {
+    color: #f0f8ff;
+  }
+  div {
+    margin-bottom: 0.7vh;
+  }
 }
-.inputs, .inputs:hover {
-    
-        div:before, div:hover {
-            border-color: #F0F8FF;
-        
-    }
-    div:before:hover {
-        border-color: aqua;
-    
-}
+.inputs,
+.inputs:hover {
+  div:before,
+  div:hover {
+    border-color: #f0f8ff;
+  }
+  div:before:hover {
+    border-color: aqua;
+  }
 }
 @media screen and (max-width: 950px) {
-    .form {
-        width: 90%;
-        margin: 0 auto;
+  .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .formCont {
+    width: 90%;
+    margin: 10px;
+    h4,
+    p {
+      color: #f0f8ff;
     }
-    .formCont {
-        width: 90%;
-        margin: 10px;
-        h4, p {
-            color: #F0F8FF;
-        }
-        div {
-            margin-bottom: 0;
-        }
+    div {
+      margin-bottom: 0;
     }
+  }
 }

@@ -40,12 +40,7 @@ const Menu = ({ menuUp, setMenuUp, setPhase, setFromPage }) => {
         </Link>
         <div className={style.icons}>
           <a href="mailto:dzoni6usb@gmail.com" target="_blank">
-            <UseAnimations
-              animation={mail}
-              strokeColor="white"
-              size={56}
-            
-            />
+            <UseAnimations animation={mail} strokeColor="white" size={56} />
           </a>
           <a
             href="https://www.linkedin.com/in/nikola-jankovic-bbb7a9220/"

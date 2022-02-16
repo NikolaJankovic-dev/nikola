@@ -1,188 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
-.navbar, .navbarDown {
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+.navbar,
+.navbarDown {
   position: fixed;
   width: 90%;
-  // margin: 10px auto;
   top: 5vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 400;
-  color: rgb(240,248,255);
+  color: rgb(240, 248, 255);
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 .navbarDown {
-    color: black;
+  color: black;
 }
 .titleNav {
-  // position: fixed;
   top: 3vh;
   left: 5vw;
   margin: 0;
   font-size: 56px;
-  font-family: 'Days One', sans-serif;
-    font-weight: 100;
+  font-family: "Days One", sans-serif;
+  font-weight: 100;
   z-index: 200;
 }
 .menu {
- font-size: 32px;
-  // position: fixed;
+  font-size: 32px;
   top: 3vh;
   right: 5vw;
   z-index: 200;
- display: flex;
- gap: 7px;
+  display: flex;
+  gap: 7px;
   cursor: pointer;
-//   background-color: #fff;
-  
 }
 .icons {
   display: flex;
 }
 
+.menuActive,
+.menuPassive {
+  width: 80px;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: all ease 1s;
+  span {
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    height: 3px;
+    transition: all 0.3s;
+    position: relative;
+  }
 
-.menuActive, .menuPassive {
-    width: 80px;
-    // height: 80px;
-    overflow: hidden;
-    margin-top: 10px;
-    transition: all ease 1s;
-    span {
-        display: block;
-        width: 100%;
-        // box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
-        border-radius: 30px;
-        // border: 1px black solid;
-        height: 3px;
-        // background: #fff;
-        transition: all .3s;
-        position: relative;
-        // margin-top: 14px;
-
-      }
-      
-      span + span {
-        margin-top: 14px;
-      }
+  span + span {
+    margin-top: 14px;
+  }
 }
-.menuActive span:nth-child(1){
-    animation: ease 0.7s topp forwards;
-    
+.menuActive span:nth-child(1) {
+  animation: ease 0.7s topp forwards;
 }
 .menuPassive span:nth-child(1) {
-    animation: ease 0.7s top-2 forwards;
+  animation: ease 0.7s top-2 forwards;
 }
-.menuActive span:nth-child(2){
-    animation: ease .7s scaled forwards;
+.menuActive span:nth-child(2) {
+  animation: ease 0.7s scaled forwards;
 }
-.menuPassive span:nth-child(2){
-    animation: ease .7s scaled-2 forwards;
+.menuPassive span:nth-child(2) {
+  animation: ease 0.7s scaled-2 forwards;
 }
-.menuActive span:nth-child(3){
-    animation: ease .7s bottom-1 forwards;
+.menuActive span:nth-child(3) {
+  animation: ease 0.7s bottom-1 forwards;
 }
-.menuPassive span:nth-child(3){
-    animation: ease .7s bottom-2 forwards;
+.menuPassive span:nth-child(3) {
+  animation: ease 0.7s bottom-2 forwards;
 }
 @keyframes topp {
-    0% {
-      top: 0;
-      transform: rotate(0);
-    }
-    50% {
-      top: 22px;
-      transform: rotate(0);
-    }
-    100% {
-      top: 22px;
-      transform: rotate(45deg);
-    }
+  0% {
+    top: 0;
+    transform: rotate(0);
   }
-  
-  @keyframes top-2 {
-    0% {
-      top: 22px;
-      transform: rotate(45deg);
-    }
-    50% {
-      top: 22px;
-      transform: rotate(0deg);
-    }
-    100% {
-      top: 0;
-      transform: rotate(0deg);
-    }
+  50% {
+    top: 22px;
+    transform: rotate(0);
   }
-  
-  @keyframes bottom-1 {
-    0% {
-      bottom: 0;
-      transform: rotate(0);
-    }
-    50% {
-      bottom: 22px;
-      transform: rotate(0);
-    }
-    100% {
-      bottom: 22px;
-      transform: rotate(135deg);
-    }
+  100% {
+    top: 22px;
+    transform: rotate(45deg);
   }
-  
-  @keyframes bottom-2 {
-    0% {
-      bottom: 22px;
-      transform: rotate(135deg);
-    }
-    50% {
-      bottom: 22px;
-      transform: rotate(0);
-    }
-    100% {
-      bottom: 0;
-      transform: rotate(0);
-    }
-  }
-  
-  @keyframes scaled {
-    50% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(0);
-    }
-  }
-  
-  @keyframes scaled-2 {
-    0% {
-      transform: scale(0);
-    }
-    50% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-// .menu::before, .menu::after {
-//     content: "";
-//     width: 35px;
-//   height: 2px;
-//   background-color: #333;
-//   margin: 6px 0;
-//   transition: 0.4s;
-// }
-// .menu::before {
-//     top: 0;
-//     transform: rotate(-45deg) translate(-5px, 6px);
-// }
-// .menu::after {
-//     bottom: 0;
-//     left: 0;
-//     transform: rotate(45deg) translate(-5px, -6px);
-// }
+}
 
+@keyframes top-2 {
+  0% {
+    top: 22px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 22px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom-1 {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 22px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 22px;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 22px;
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 22px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .arrow,
 .arrowHome {
   position: fixed;
@@ -206,9 +177,8 @@
   .titleNav {
     font-size: 46px;
   }
-   .menuPassive {
+  .menuPassive {
     width: 46px;
-    // height: 26px;
   }
   .icons {
     display: none;

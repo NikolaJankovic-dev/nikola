@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import style from './Aside.module.css'
 
 const Aside = ({page, phase, setPhase, setFromPage}) => {
@@ -16,7 +16,6 @@ const Aside = ({page, phase, setPhase, setFromPage}) => {
   }
   return <div>
       <aside className={!page ? style.aside : style.asidePage}>
-      {/* <span onClick={scrollUp} className={!page ? style.back : style.backPage}></span> */}
         <span
           className={phase === 1 ? style.spanactive : style.spanpassive}
           onClick={() => {setPhase(1); setFromPage(false)}}

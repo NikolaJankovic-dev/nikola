@@ -40,7 +40,6 @@ const Phase1 = ({ phase, setPhase, page, setPage }) => {
         </div>
         <div className={style.imageDiv}>
           <Canvas>
-            {/* <ambientLight intensity={0.5} /> */}
             <pointLight
               color="#9cc8ee;"
               position={[55, 50, 1]}

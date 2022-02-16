@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap");
 
-
 .headingNum {
   position: absolute;
   left: 0;
@@ -8,7 +7,6 @@
   padding-left: 62px;
   padding-right: 32px;
   font-family: "Oxanium";
-//   line-height: 1.1;
   color: #ff4d5a;
   margin: 0;
 }
@@ -73,13 +71,10 @@
   font-size: 28px;
   color: #072142;
   letter-spacing: 2px;
-  // font-weight: 900;
   margin: 0;
-  // line-height: 1.2;
 }
 .skillTime {
   font-size: 16px;
-  // line-height: 1.2;
   color: #828c96;
   margin: 0;
   margin-left: 8px;
@@ -90,7 +85,6 @@
   color: #072142;
   letter-spacing: 2px;
   margin: 0;
-  // line-height: 1.2;
 }
 .skillBar, .skillBar90, .skillBar70, .skillBar60, .skillBar50 {
   width: 100%;
@@ -107,9 +101,6 @@
   top: 0;
   height: 100%;
   border-radius: 10px;
- 
-  // background-image: linear-gradient(to right, #072141, #8c2b7a 50%, #ff4d5a );
-  
 }
 .skillBar::after {
   width: 80%;

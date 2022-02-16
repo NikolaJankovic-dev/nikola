@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
-.navbar, .navbarDown {
+.navbar,
+.navbarDown {
   position: fixed;
   width: 90%;
   top: 5vh;
@@ -28,7 +29,7 @@
   left: 5vw;
   margin: 0;
   font-size: 56px;
-  font-family: 'Days One', sans-serif;
+  font-family: "Days One", sans-serif;
   font-weight: 100;
   z-index: 200;
 }
@@ -51,7 +52,8 @@
   display: flex;
 }
 
-.menuActive, .menuPassive {
+.menuActive,
+.menuPassive {
   width: 80px;
   overflow: hidden;
   margin-top: 10px;
@@ -59,17 +61,19 @@
   transition: all ease 1s;
 }
 
-.menuActive span, .menuPassive span {
+.menuActive span,
+.menuPassive span {
   display: block;
   width: 100%;
   border-radius: 30px;
   height: 3px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: relative;
 }
 
-.menuActive span + span, .menuPassive span + span {
+.menuActive span + span,
+.menuPassive span + span {
   margin-top: 14px;
 }
 
@@ -84,23 +88,23 @@
 }
 
 .menuActive span:nth-child(2) {
-  -webkit-animation: ease .7s scaled forwards;
-          animation: ease .7s scaled forwards;
+  -webkit-animation: ease 0.7s scaled forwards;
+          animation: ease 0.7s scaled forwards;
 }
 
 .menuPassive span:nth-child(2) {
-  -webkit-animation: ease .7s scaled-2 forwards;
-          animation: ease .7s scaled-2 forwards;
+  -webkit-animation: ease 0.7s scaled-2 forwards;
+          animation: ease 0.7s scaled-2 forwards;
 }
 
 .menuActive span:nth-child(3) {
-  -webkit-animation: ease .7s bottom-1 forwards;
-          animation: ease .7s bottom-1 forwards;
+  -webkit-animation: ease 0.7s bottom-1 forwards;
+          animation: ease 0.7s bottom-1 forwards;
 }
 
 .menuPassive span:nth-child(3) {
-  -webkit-animation: ease .7s bottom-2 forwards;
-          animation: ease .7s bottom-2 forwards;
+  -webkit-animation: ease 0.7s bottom-2 forwards;
+          animation: ease 0.7s bottom-2 forwards;
 }
 
 @-webkit-keyframes topp {

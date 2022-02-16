@@ -1,6 +1,3 @@
-// *{
-//   box-sizing: border-box;
-// }
 .app {
   background: linear-gradient(0deg, rgb(6, 22, 32) 0%, rgb(11, 43, 73) 100%);
   background: rgb(4, 13, 22);
@@ -13,8 +10,6 @@
   overflow: hidden;
 }
 .appPage {
-  // background: linear-gradient(45deg, rgb(6, 22, 32) 0%, rgb(11, 43, 73) 100%);
-
   background: black;
   background-size: 100% 100vh;
   background-position: top;
@@ -22,11 +17,9 @@
   height: 100vh;
   width: 100%;
   transition: all ease 1s;
-  // overflow-x: hidden;
   scroll-behavior: smooth;
 }
 *:-webkit-scrollbar {
   display: none;
   background-color: #aaa;
 }
- 

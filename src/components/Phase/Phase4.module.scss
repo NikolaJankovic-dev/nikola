@@ -7,7 +7,6 @@
   width: 100%;
   left: 0vw;
   color: aliceblue;
-  //   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 70px;
@@ -16,13 +15,10 @@
   h1 {
     font-size: 4.5em;
     font-family: "Days One", sans-serif;
-
     font-weight: 400;
-    // height: 100%;
     margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;
-    // line-height: 1em;
   }
 }
 .phase2 {
@@ -36,10 +32,6 @@
   top: 0vh;
   padding-top: 40vh;
   padding-left: 10vw;
-
-  // right: 200%;
-  // transition: all ease 2s;
-  // transition-delay: 2s;
 }
 .phase2contactive {
   position: absolute;
@@ -52,11 +44,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-
-  // right: 0%;
-  // transition: all ease 2s;
-  // animation: active 2s ease-in-out ;
 }
 @keyframes active {
   from {
@@ -100,9 +87,7 @@ p {
     height: 100vh;
     width: 100%;
     margin: 0 auto;
-    // left: 0vw;
     color: aliceblue;
-    //   display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 70px;
@@ -113,7 +98,6 @@ p {
       top: 12vh;
       right: 0%;
       left: 0;
-      // transform: translateX(-50%);
       width: 90%;
       margin: 0 auto;
       height: 76vh;
@@ -124,13 +108,10 @@ p {
     h1 {
       font-size: 32px;
       font-family: "Days One", sans-serif;
-
       font-weight: 400;
-      // height: 100%;
       margin: 0;
       margin-block-start: 0;
       margin-block-end: 0;
-      // line-height: 1em;
     }
   }
   .imageDiv {

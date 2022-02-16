@@ -11,7 +11,8 @@
   transition: all ease 1s;
 }
 
-.two, .twoFromPage {
+.two,
+.twoFromPage {
   position: fixed;
   width: 100%;
   top: -100vh;
@@ -22,7 +23,8 @@
   transition: all ease 1s;
 }
 
-.three, .threeFromPage {
+.three,
+.threeFromPage {
   position: fixed;
   width: 100%;
   top: -200vh;
