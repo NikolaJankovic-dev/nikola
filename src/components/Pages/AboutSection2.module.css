@@ -21,7 +21,8 @@
   margin: auto;
 }
 
-.passionWrap, .skillWrap {
+.passionWrap,
+.skillWrap {
   margin-top: 20px;
 }
 
@@ -111,5 +112,39 @@
   line-height: 2;
   word-wrap: break-word;
   white-space: normal;
+}
+
+@media screen and (max-width: 950px) {
+  .passionWrap {
+    margin: 0;
+  }
+  .passionHead {
+    padding-left: 0;
+  }
+  .headingNum {
+    font-size: 26px;
+    padding-left: 32px;
+  }
+  .headingNum::before {
+    width: 24px;
+  }
+  .passionHeading h2 {
+    font-size: 26px;
+    padding-left: 78px;
+    padding-top: 0;
+  }
+  .passionCont {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .passionCont ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .passionCont ul li {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=AboutSection2.module.css.map */
