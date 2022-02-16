@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
-.phase2, .phase5 {
+.phase2,
+.phase5 {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -16,9 +17,10 @@
   overflow: hidden;
 }
 
-.phase2 h1, .phase5 h1 {
+.phase2 h1,
+.phase5 h1 {
   font-size: 4.5em;
-  font-family: 'Days One', sans-serif;
+  font-family: "Days One", sans-serif;
   font-weight: 400;
   margin: 0;
   -webkit-margin-before: 0;
@@ -45,9 +47,23 @@
 .phase2contactive {
   position: absolute;
   top: 12vh;
+  height: 76vh;
   left: 8vw;
   z-index: 1;
   width: 558px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @-webkit-keyframes active {
@@ -98,5 +114,52 @@
 
 p {
   color: aliceblue;
+}
+
+@media screen and (max-width: 950px) {
+  .phase2,
+  .phase5 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    color: aliceblue;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 70px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .phase2 .phase2contactive,
+  .phase5 .phase2contactive {
+    position: absolute;
+    top: 12vh;
+    right: 0%;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+    height: 76vh;
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+  }
+  .phase2 h1,
+  .phase5 h1 {
+    font-size: 32px;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+  }
+  .imageDiv {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Phase4.module.css.map */

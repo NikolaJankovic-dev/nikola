@@ -16,7 +16,7 @@
 }
 
 .formCont div {
-  margin-bottom: 2.7vh;
+  margin-bottom: 0.7vh;
 }
 
 .inputs div:before, .inputs div:hover, .inputs:hover div:before, .inputs:hover div:hover {
@@ -25,5 +25,22 @@
 
 .inputs div:before:hover, .inputs:hover div:before:hover {
   border-color: aqua;
+}
+
+@media screen and (max-width: 950px) {
+  .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .formCont {
+    width: 90%;
+    margin: 10px;
+  }
+  .formCont h4, .formCont p {
+    color: #F0F8FF;
+  }
+  .formCont div {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=ContactForm.module.css.map */

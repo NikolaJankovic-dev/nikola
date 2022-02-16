@@ -28,7 +28,7 @@ border: 1px solid rgba(61, 61, 61, 0.075);
         color: #F0F8FF;
     }
     div {
-        margin-bottom: 2.7vh;
+        margin-bottom: 0.7vh;
     }
 }
 .inputs, .inputs:hover {
@@ -41,4 +41,20 @@ border: 1px solid rgba(61, 61, 61, 0.075);
         border-color: aqua;
     
 }
+}
+@media screen and (max-width: 950px) {
+    .form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .formCont {
+        width: 90%;
+        margin: 10px;
+        h4, p {
+            color: #F0F8FF;
+        }
+        div {
+            margin-bottom: 0;
+        }
+    }
 }

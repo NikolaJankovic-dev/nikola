@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
 
-.phase2, .phase5 {
+.phase2,
+.phase5 {
   position: relative;
   height: 100vh;
   width: 100%;
   left: 0vw;
   color: aliceblue;
-//   display: flex;
+  //   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 70px;
   overflow: hidden;
-  
 
   h1 {
- 
     font-size: 4.5em;
-    font-family: 'Days One', sans-serif;
+    font-family: "Days One", sans-serif;
 
     font-weight: 400;
     // height: 100%;
@@ -24,39 +23,48 @@
     margin-block-start: 0;
     margin-block-end: 0;
     // line-height: 1em;
-    
   }
 }
 .phase2 {
-    top: 0vh;
+  top: 0vh;
 }
 .phase5 {
-    top: 0vh;
+  top: 0vh;
 }
 .phase2cont {
-    position: absolute;
-    top: 0vh;
-    padding-top: 40vh;
-    padding-left: 10vw;
+  position: absolute;
+  top: 0vh;
+  padding-top: 40vh;
+  padding-left: 10vw;
 
-    // right: 200%;
-    // transition: all ease 2s;
-    // transition-delay: 2s;
+  // right: 200%;
+  // transition: all ease 2s;
+  // transition-delay: 2s;
 }
 .phase2contactive {
-    position: absolute;
-    top: 12vh;
-    left: 8vw;
-    z-index: 1;
-    width: 558px;
+  position: absolute;
+  top: 12vh;
+  height: 76vh;
+  left: 8vw;
+  z-index: 1;
+  width: 558px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 
-    // right: 0%;
-    // transition: all ease 2s;
-    // animation: active 2s ease-in-out ;
+  // right: 0%;
+  // transition: all ease 2s;
+  // animation: active 2s ease-in-out ;
 }
-@keyframes active{
-    from {left: -100%}
-    to {left: 0}
+@keyframes active {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
 }
 .imageDiv {
   position: absolute;
@@ -64,7 +72,7 @@
   right: 8vw;
   width: 53vw;
   height: 76vh;
-  background-image: url('https://i.imgur.com/dEot7B9.jpg');
+  background-image: url("https://i.imgur.com/dEot7B9.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,14 +84,56 @@
   right: 0vw;
   width: 61vw;
   height: 100vh;
-  background-image: url('https://wallpaperaccess.com/full/1949688.jpg');
+  background-image: url("https://wallpaperaccess.com/full/1949688.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all ease 1s;
-
-
 }
 p {
   color: aliceblue;
+}
+@media screen and (max-width: 950px) {
+  .phase2,
+  .phase5 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    // left: 0vw;
+    color: aliceblue;
+    //   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    overflow: hidden;
+    text-align: center;
+    .phase2contactive {
+      position: absolute;
+      top: 12vh;
+      right: 0%;
+      left: 0;
+      // transform: translateX(-50%);
+      width: 90%;
+      margin: 0 auto;
+      height: 76vh;
+
+      transition: all ease 1s;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-family: "Days One", sans-serif;
+
+      font-weight: 400;
+      // height: 100%;
+      margin: 0;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      // line-height: 1em;
+    }
+  }
+  .imageDiv {
+    display: none;
+  }
 }

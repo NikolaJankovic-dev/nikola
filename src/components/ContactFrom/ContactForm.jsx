@@ -80,7 +80,8 @@ const ContactForm = () => {
               id="message"
               required
               variant="standard"
-              minRows={4}
+              minRows={2}
+              maxRows={4}
             //   InputLabelProps={{style={color:"white"}}}
             className={style.inputs}
             
