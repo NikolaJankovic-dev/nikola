@@ -1,7 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
 .navbar, .navbarDown {
-  z-index: 4;
+  position: fixed;
+  width: 90%;
+  top: 5vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 400;
   color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbarDown {
@@ -9,7 +24,6 @@
 }
 
 .titleNav {
-  position: fixed;
   top: 3vh;
   left: 5vw;
   margin: 0;
@@ -21,7 +35,6 @@
 
 .menu {
   font-size: 32px;
-  position: fixed;
   top: 3vh;
   right: 5vw;
   z-index: 200;
@@ -32,10 +45,18 @@
   cursor: pointer;
 }
 
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menuActive, .menuPassive {
   width: 80px;
   overflow: hidden;
   margin-top: 10px;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
 }
 
 .menuActive span, .menuPassive span {
@@ -298,5 +319,17 @@
 .arrowHome {
   z-index: -2;
   opacity: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .titleNav {
+    font-size: 46px;
+  }
+  .menuPassive {
+    width: 46px;
+  }
+  .icons {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Navbar.module.css.map */

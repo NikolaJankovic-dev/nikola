@@ -48,6 +48,7 @@ const Navbar = ({ page, setPhase, setFromPage }) => {
         <h1 className={style.titleNav}>Nikola </h1>
         {/* <div className={style.menu}></div> */}
         <div className={style.menu}>
+          <div className={style.icons}>
         <a
             href="mailto:dzoni6usb@gmail.com"
             target="_blank"
@@ -78,7 +79,7 @@ const Navbar = ({ page, setPhase, setFromPage }) => {
               fillColor="white"
               size={56}
             />
-          </a>
+          </a></div>
           <div
             onClick={() => setMenuUp(!menuUp)}
             className={!menuUp ? style.menuActive : style.menuPassive}

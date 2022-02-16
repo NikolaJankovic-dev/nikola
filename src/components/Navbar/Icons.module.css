@@ -1,0 +1,12 @@
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 550px) {
+  .icons {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Icons.module.css.map */
