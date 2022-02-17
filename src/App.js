@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect, useCallback } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useSwipeable } from "react-swipeable";
 import style from "./App.module.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -47,6 +48,7 @@ function App() {
       }
     }
   };
+
   const handlePop = () => {
     if (params === "/projects" || params === "/aboutme") {
       setPage(true);
@@ -55,9 +57,6 @@ function App() {
       setPage(false);
     }
   };
-  const pageSettUp = useCallback(() => {
-    handlePop();
-  }, [params]);
 
   useLayoutEffect(() => {
     window.document.body.addEventListener("popstate", handlePop);
@@ -74,9 +73,40 @@ function App() {
       window.document.removeEventListener("wheel", handleScroll);
     };
   });
+  const handleSwipeUp = () => {
+    if (!page) {
+      if (phase === 1) {
+        setPhase(2);
+      }
+      if (phase === 2) {
+        setPhase(3);
+      }
+      if (phase === 3) {
+        setPhase(4);
+      }
+    }
+  };
+  const handleSwipeDown = () => {
+    if (!page) {
+      if (phase === 4) {
+        setPhase(3);
+      }
+      if (phase === 3) {
+        setPhase(2);
+      }
+      if (phase === 2) {
+        setPhase(1);
+      }
+    }
+  };
+
+  const handlers = useSwipeable({
+    onSwipedDown: () => handleSwipeDown(),
+    onSwipedUp: () => handleSwipeUp(),
+  });
 
   return (
-    <div className={!page ? style.app : style.appPage}>
+    <div className={!page ? style.app : style.appPage} {...handlers}>
       <BrowserRouter>
         <Navbar page={page} setPhase={setPhase} setFromPage={setFromPage} />
         <Aside
