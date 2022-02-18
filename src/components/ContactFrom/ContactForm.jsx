@@ -3,35 +3,42 @@ import React, { useState, useRef } from "react";
 import Modal from "react-modal";
 import style from "./ContactForm.module.css";
 import ModalMail from "./ModalMail";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   Modal.setAppElement(document.getElementById("root"));
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [status, setStatus] = useState("")
+  const [status, setStatus] = useState("");
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_r30wdqf', 'template_49s5kmp', form.current, 'user_nOYVsuehfChhCO58SJ0gB')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_r30wdqf",
+        "template_49s5kmp",
+        form.current,
+        "user_nOYVsuehfChhCO58SJ0gB"
+      )
+      .then(
+        (result) => {
           setStatus("Message sent!");
-      }, (error) => {
+        },
+        (error) => {
           setStatus(error.text);
-      }, openModal());
+        },
+        openModal()
+      );
   };
   const openModal = () => {
     setIsOpen(true);
     window.document.body.style.overflow = "hidden";
-   
   };
 
   const closeModal = () => {
     setIsOpen(false);
     window.document.body.style.overflowY = "visible";
-
   };
-
 
   const label = style.label;
   return (
