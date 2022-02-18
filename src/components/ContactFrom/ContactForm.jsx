@@ -1,50 +1,42 @@
 import { Button, TextField } from "@mui/material";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Modal from "react-modal";
 import style from "./ContactForm.module.css";
 import ModalMail from "./ModalMail";
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   Modal.setAppElement(document.getElementById("root"));
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [status, setStatus] = useState("")
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+    emailjs.sendForm('service_r30wdqf', 'template_49s5kmp', form.current, 'user_nOYVsuehfChhCO58SJ0gB')
+      .then((result) => {
+          setStatus("Message sent!");
+      }, (error) => {
+          setStatus(error.text);
+      }, openModal());
+  };
   const openModal = () => {
     setIsOpen(true);
     window.document.body.style.overflow = "hidden";
-    window.document.body.querySelectorAll("#btn")[0].style.display = "none";
+   
   };
 
   const closeModal = () => {
     setIsOpen(false);
     window.document.body.style.overflowY = "visible";
-    window.document.body.querySelectorAll("#btn")[0].style.display = "block";
+
   };
 
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    let result = await response.json();
-    setStatus(result.status);
-    openModal();
-  };
+
   const label = style.label;
   return (
     <div>
-      <form className={style.form} onSubmit={handleSubmit}>
+      <form className={style.form} ref={form} onSubmit={sendEmail}>
         <div className={style.formCont}>
           <h4>LET'S TALK!</h4>
           <p>
@@ -55,7 +47,7 @@ const ContactForm = () => {
             {" "}
             <TextField
               label="Name"
-              name="name"
+              name="from_name"
               required
               id="name"
               variant="standard"
@@ -72,7 +64,7 @@ const ContactForm = () => {
           <div>
             <TextField
               label="E-mail"
-              name="email"
+              name="from_email"
               required
               id="name"
               variant="standard"
@@ -92,6 +84,7 @@ const ContactForm = () => {
               label="Message"
               id="message"
               required
+              name="message"
               variant="standard"
               minRows={2}
               maxRows={4}
